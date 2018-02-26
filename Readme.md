@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артем Бубнов](https://up.htmlacademy.ru/htmlcss/20/user/631323).
-* Наставник: `Неизвестно`.
+* Наставник: [Яна Крикливая](https://htmlacademy.ru/profile/kyarun).
 
 ---
 
