@@ -2,76 +2,78 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllacy-Shop: магазин мороженного</title>
   </head>
   
   <body>
     
-    <header>
-      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-        <nav class="main-navigation">
-          <img src="img/index-logo.svg" alt="Gllacy-Shop logo">
-          <ul class="site-navigation">
-            <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li><span>Поиск</span></li>
-            <li><span>Вход</span></li>
-            <li><span>Корзина</span></li>
-          </ul>
-        </nav>
-        <div>
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
-        </div>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img src="img/index-logo.svg" alt="Gllacy-Shop logo">
+        <ul class="site-navigation">
+          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><span>Поиск</span></li>
+          <li><span>Вход</span></li>
+          <li><span>Корзина</span></li>
+        </ul>
+      </nav>
+      <div>
+        <p>С 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+      </div>
     </header>
     
     <main class="container">
+      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
       <section class="index-slider">
         <h2 class="visually-hidden">Главные предложения</h2>
         <div>Крем-брюле и пломбир с малиновым джемом</div>
         <div>Шоколадный пломбир и лимонный сорбет</div>
-        <div>пломбир с помадкой и клубничный щербет</div>
+        <div>Пломбир с помадкой и клубничный щербет</div>
         <button class="main-button">Давайте оба!</button>
       </section>
-      <article>
+      <article class="promo-box">
         <h2 class="visually-hidden">Промоакции</h2>
         <section class="promo-banner">
           <h3>Малинка даром!</h3>
           <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="main-button">Хочу варенье!</button>
         </section>
-        <section>
-          <h3 class="promo-banner">Шоколадки даром!</h3>
+        <section class="promo-banner">
+          <h3>Шоколадки даром!</h3>
           <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <button class="main-button">Хочу шоколадки!</button>
         </section>
       </article>
-      <article>
+      <section class="catalog">
         <h2 class="visually-hidden">Хиты продаж</h2>
-        <section>
+        <ul class="catalog-list">
+          <li class="catalog-item-hit">
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-          <span class="top-sale">Хит</span>
-          <p>310p<span class="mass">/кг</span></p>
-        </section>
-        <section>
+            <p><span class="top-sale">Хит</span></p>
+            <p>310 ₽<span class="mass">/кг</span></p>
+          </li>
+          <li class="catalog-item-hit">
             <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-          <span class="top-sale">Хит</span>
-          <p>380p<span class="mass">/кг</span></p>
-        </section>
-        <section>
+            <p><span class="top-sale">Хит</span></p>
+            <p>380 ₽<span class="mass">/кг</span></p>
+          </li>
+          <li class="catalog-item-hit">
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-          <span class="top-sale">Хит</span>
-          <p>355p<span class="mass">/кг</span></p>
-        </section>
-        <section>
+            <p><span class="top-sale">Хит</span></p>
+            <p>355 ₽<span class="mass">/кг</span></p>
+          </li>
+          <li class="catalog-item-hit">
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-          <span class="top-sale">Хит</span>
-          <p>380p<span class="mass">/кг</span></p>
-        </section>
-      </article>
+            <p><span class="top-sale">Хит</span></p>
+            <p>380 ₽<span class="mass">/кг</span></p>
+          </li>
+        </ul>
+      </section>
       <article class="about-us">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -89,7 +91,9 @@
         <input type="text">
         <button class="main-button">Отправить</button> 
       </section>
-      <div class="interactive-map"></div>
+      <div class="interactive-map">
+        <!--Здесь будет карта-->
+      </div>
       <section class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -101,8 +105,25 @@
       </section>
     </main>
      
-    <footer>
-         
+    <footer class="main-footer">
+      <section class="social-networks">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <a href="#">Твиттер</a>
+        <a href="#">Инстаграм</a>
+        <a href="#">Фейсбук</a>
+        <a href="#">ВКонтакте</a>
+      </section>
+      <section class="information">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
+        <a href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </section>
+      <div class="copyright">
+        <img src="htmlacademy.png" alt="HTML Academy logo">
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+      </div>
     </footer> 
     
   </body>
