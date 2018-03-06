@@ -4,51 +4,48 @@
     <meta charset="utf-8">
     <title>Gllacy-Shop: магазин мороженного</title>
   </head>
-  
-  <body>
-    
+  <body>  
     <header class="main-header">
+      <img class="logo-image" src="img/index-logo.svg" alt="Логотип магазина 'Глейси-шоп'">
       <nav class="main-navigation">
-        <img src="img/index-logo.svg" alt="Gllacy-Shop logo">
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Оплата и доставка</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="site-navigation-item"><a href="#">Оплата и доставка</a></li>
+          <li class="site-navigation-item"><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><span>Поиск</span></li>
-          <li><span>Вход</span></li>
-          <li><span>Корзина</span></li>
+          <li class="user-navigation-search"><button>Поиск</button></li>
+          <li class="user-navigation-login"><button>Вход</button></li>
+          <li class="user-navigation-basket"><button>Корзина</button></li>
         </ul>
       </nav>
       <div class="header-contacts">
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+        <p class="header-worktime">С 10 до 20, ежедневно</p>
+        <p class="header-contact-phone"><a href="callto:+78124502525"> 8 812 450-25-25</a></p>
       </div>
     </header>
-    
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
       <section class="index-slider">
         <h2 class="visually-hidden">Главные предложения</h2>
-        <div>Крем-брюле и пломбир с малиновым джемом</div>
-        <div>Шоколадный пломбир и лимонный сорбет</div>
-        <div>Пломбир с помадкой и клубничный щербет</div>
+        <div class="index-slider-item">Крем-брюле и пломбир с малиновым джемом</div>
+        <div class="index-slider-item">Шоколадный пломбир и лимонный сорбет</div>
+        <div class="index-slider-item">Пломбир с помадкой и клубничный щербет</div>
         <button class="main-button">Давайте оба!</button>
       </section>
-      <article class="promo-box">
+      <section class="promo-box">
         <h2 class="visually-hidden">Промоакции</h2>
-        <section class="promo-banner">
-          <h3>Малинка даром!</h3>
+        <article class="promo-banner">
+          <h3 class="promo-banner-title">Малинка даром!</h3>
           <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="main-button">Хочу варенье!</button>
-        </section>
-        <section class="promo-banner">
-          <h3>Шоколадки даром!</h3>
+        </article>
+        <article class="promo-banner">
+          <h3 class="promo-banner-title">Шоколадки даром!</h3>
           <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <button class="main-button">Хочу шоколадки!</button>
-        </section>
-      </article>
+        </article>
+      </section>
       <section class="catalog">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
@@ -82,51 +79,49 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </article>
       <article class="news">
-        <h2>Новое в нашем блоге</h2>
-        <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+        <h2 class="news-title">Новое в нашем блоге</h2>
+        <p  class="news-text"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
       </article>
       <section class="subscribe">
         <h2 class="visually-hidden">Рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <p class="subsribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <input type="text">
         <button class="main-button">Отправить</button> 
       </section>
       <div class="interactive-map">
-        <!--Здесь будет карта-->
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-map-128.png">
       </div>
-      <section class="feedback">
+      <section class="index-contacts">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <p>Адрес главного офиса и офлайн-магазина:</p>
-        <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <p>Для заказов по телефону:</p>
-        <p>8 812 450-25-25</p>
-        <p>(с 10 до 20 ежедневно)</p>
+        <p class="index-contacts-title">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="index-contacts-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="index-contacts-title">Для заказов по телефону:</p>
+        <p class="index-contacts-text">8 812 450-25-25</p>
+        <p class="index-contacts-title">(с 10 до 20 ежедневно)</p>
         <button class="main-button">Форма обратной связи</button>
       </section>
     </main>
-     
     <footer class="main-footer">
       <div class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">ВКонтакте</a></li>
+          <li class="social-button"><a class="social-button-twitter" href="#">Твиттер</a></li>
+          <li class="social-button"><a class="social-button-instagram" href="#">Инстаграм</a></li>
+          <li class="social-button"><a class="social-button-facebook" href="#">Фейсбук</a></li>
+          <li class="social-button"><a class="social-button-vkontakte" href="#">ВКонтакте</a></li>
         </ul>
       </div>
-      <section class="information">
+      <section class="footer-menu">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <a href="#">Для поставщиков</a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
+        <a class="footer-menu-item" href="#">Для поставщиков</a>
+        <a class="footer-menu-item" href="#">О производстве</a>
+        <a class="footer-menu-item" href="#">Наши документы</a>
+        <a class="footer-menu-item" href="#">Экологические стандарты</a>
       </section>
       <div class="footer-copyright">
-        <img src="htmlacademy.png" alt="HTML Academy logo">
+        <img src="htmlacademy.png" alt="Логотип HTML Academy">
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </div>
     </footer> 
-    
   </body>
 </html>
