@@ -26,13 +26,19 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-      <section class="index-slider">
+      <article class="index-slider">
         <h2 class="visually-hidden">Главные предложения</h2>
-        <div class="index-slider-item">Крем-брюле и пломбир с малиновым джемом</div>
-        <div class="index-slider-item">Шоколадный пломбир и лимонный сорбет</div>
-        <div class="index-slider-item">Пломбир с помадкой и клубничный щербет</div>
-        <button class="main-button">Давайте оба!</button>
-      </section>
+        <div class="index-slider-item">
+          <h3 class="index-slider-item-title">Крем-брюле и пломбир с малиновым джемом</h3>
+        </div>
+        <div class="index-slider-item">
+          <h3 class="index-slider-item-title">Шоколадный пломбир и лимонный сорбет</h3>
+        </div>
+        <div class="index-slider-item">
+          <h3 class="index-slider-item-title">Пломбир с помадкой и клубничный щербет</h3>
+        </div>
+        <button class="button-index-slider">Давайте оба!</button>
+      </article>
       <section class="promo-box">
         <h2 class="visually-hidden">Промоакции</h2>
         <article class="promo-banner">
@@ -48,35 +54,49 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Хиты продаж</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item-hit">
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <p><span class="top-sale">Хит</span></p>
-            <p>310 ₽<span class="mass">/кг</span></p>
-          </li>
-          <li class="catalog-item-hit">
-            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-            <p><span class="top-sale">Хит</span></p>
-            <p>380 ₽<span class="mass">/кг</span></p>
-          </li>
-          <li class="catalog-item-hit">
-            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <p><span class="top-sale">Хит</span></p>
-            <p>355 ₽<span class="mass">/кг</span></p>
-          </li>
-          <li class="catalog-item-hit">
-            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <p><span class="top-sale">Хит</span></p>
-            <p>380 ₽<span class="mass">/кг</span></p>
-          </li>
-        </ul>
+        <section class="catalog-item">
+          <img src="img/catalog-item/catalog-item1.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </h3>
+          <p><span class="top-sale">Хит</span></p>
+          <p>310₽<span class="mass">/кг</span></p>
+          <button class="button-catalog-item">Предварительный просмотр</button>
+        </section>
+        <section class="catalog-item">
+          <img src="img/catalog-item/catalog-item2.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </h3>
+          <p><span class="top-sale">Хит</span></p>
+          <p>380₽<span class="mass">/кг</span></p>
+          <button class="button-catalog-item">Предварительный просмотр</button>
+        </section>
+        <section class="catalog-item">
+          <img src="img/catalog-item/catalog-item3.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </h3>
+          <p><span class="top-sale">Хит</span></p>
+          <p>355₽<span class="mass">/кг</span></p>
+          <button class="button-catalog-item">Предварительный просмотр</button>
+        </section>
+        <section class="catalog-item">
+          <img src="img/catalog-item/catalog-item4.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <h3 class="catalog-item-title">
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </h3>
+          <p><span class="top-sale">Хит</span></p>
+          <p>380₽<span class="mass">/кг</span></p>
+          <button class="button-catalog-item">Предварительный просмотр</button>
+        </section>
       </section>
       <article class="about-us">
-        <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <p class="about-us-article">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p class="about-us-article">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+        <p class="about-us-article">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="about-us-article">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </article>
       <article class="news">
         <h2 class="news-title">Новое в нашем блоге</h2>
@@ -89,10 +109,10 @@
         <button class="main-button">Отправить</button> 
       </section>
       <div class="interactive-map">
-        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-map-128.png">
+        <img src="img/interactive-map.png" alt="Карта">
       </div>
       <section class="index-contacts">
-        <h2 class="visually-hidden">Обратная связь</h2>
+        <h2 class="visually-hidden">Как связаться</h2>
         <p class="index-contacts-title">Адрес главного офиса и офлайн-магазина:</p>
         <p class="index-contacts-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p class="index-contacts-title">Для заказов по телефону:</p>
