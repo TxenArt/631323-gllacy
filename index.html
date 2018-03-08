@@ -6,19 +6,23 @@
   </head>
   <body>  
     <header class="main-header">
-      <img class="logo-image" src="img/index-logo.svg" alt="Логотип магазина 'Глейси-шоп'">
+      <div class="logo">
+        <img class="logo-image" src="img/index-logo.svg" alt="Логотип магазина 'Глейси-шоп'">
+      </div>
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="#">Оплата и доставка</a></li>
-          <li class="site-navigation-item"><a href="#">О Компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation-search"><button>Поиск</button></li>
-          <li class="user-navigation-login"><button>Вход</button></li>
-          <li class="user-navigation-basket"><button>Корзина</button></li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item main-navigation-item-current"><a href="catalog.html" class="main-navigation-link">Каталог</a></li>
+          <li class="main-navigation-item main-navigation-item-current"><a href="#" class="main-navigation-link">Оплата и доставка</a></li>
+          <li class="main-navigation-item main-navigation-item-current"><a href="#" class="main-navigation-link">О Компании</a></li>
         </ul>
       </nav>
+      <div>
+        <ul class="user-navigation">
+          <li class="user-navigation-search"><button class="button-header-search">Поиск</button></li>
+          <li class="user-navigation-login"><button class="button-header-login">Вход</button></li>
+          <li class="user-navigation-basket"><button class="button-header-basket">Корзина</button></li>
+        </ul>
+      </div>
       <div class="header-contacts">
         <p class="header-worktime">С 10 до 20, ежедневно</p>
         <p class="header-contact-phone"><a href="callto:+78124502525"> 8 812 450-25-25</a></p>
