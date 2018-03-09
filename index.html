@@ -26,22 +26,28 @@
       </nav>
       <ul class="user-actions">
         <li class="user-actions-search">
-          <input type="text" class="user-search-input">
-          <button class="button-header-search">Поиск</button>
+          <input type="text" class="user-actions-search-input">
+          <button class="user-actions-button user-actions-search-button">Поиск</button>
         </li>
         <li class="user-actions-login">
-          <button class="button-header-login">Вход</button>
-          <div class="login-hover">
+          <button class="user-action-button user-action-button-login">Вход</button>
+          <div class="user-action-login-popup">
             <form action="#" class="login-form">
               <p><label for="email-field" class="#">Электронная почта</label>
               <input type="text" class="" id="email-field" name="email"></p>
-              <p><label for="password-field" class="#" id="password-field">Пароль</label>
-              <input type="password" id="password-field" name="password"></p>
+              <p><label for="password-field" class="#">Пароль</label>
+              <input type="password" class="#" id="password-field" name="password"></p>
               <input type="submit" value="Войти" class="login-submit-button">
             </form>
+            <ul class="login-help">
+              <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+              <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+            </ul>
           </div>
         </li>
-        <li class="user-actions-basket"><button class="button-header-basket">Корзина</button></li>
+        <li class="user-actions-basket">
+          <button class="user-actions-button user-actions-basket-button">Корзина</button>
+        </li>
       </ul>
       <div class="header-contacts">
         <p class="header-worktime">С 10 до 20, ежедневно</p>
@@ -54,15 +60,15 @@
         <h2 class="visually-hidden">Главные предложения</h2>
         <section class="slider-item">
           <h3 class="slider-item-title">Крем-брюле и пломбир с малиновым джемом</h3>
-          <a href="#" class="slide-button">Давайте оба!</a>
+          <a href="#" class="slider-item-button">Давайте оба!</a>
         </section>
         <section class="slider-item">
           <h3 class="slider-item-title">Шоколадный пломбир и лимонный сорбет</h3>
-          <a href="#" class="slide-button">Давайте оба!</a>
+          <a href="#" class="slider-item-button">Давайте оба!</a>
         </section>
         <section class="slider-item">
           <h3 class="slider-item-title">Пломбир с помадкой и клубничный щербет</h3>
-          <a href="#" class="slide-button">Давайте оба!</a>
+          <a href="#" class="slider-item-button">Давайте оба!</a>
         </section>
         <div class="slider-controls">
           <a href="#" class="slider-control">1</a>
@@ -149,7 +155,10 @@
         <p class="company-contacts-phone">Для заказов по телефону:
         <br>8 812 450-25-25
         <br>(с 10 до 20 ежедневно)
-        <button class="feedback-button">Форма обратной связи</button>
+        <button class="company-contacts-feedback-button">Форма обратной связи</button>
+        <div class="feedback">
+<!--          Здесь будет форма обратной связи-->
+        </div>
       </section>
     </main>
     <footer class="main-footer">
