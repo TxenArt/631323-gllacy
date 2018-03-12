@@ -27,12 +27,14 @@
       <ul class="user-actions">
         <li class="user-action user-action-search">
           <button class="user-action-button user-action-button-search">Поиск</button>
-          <input type="text" class="user-action-input" value="Что ищем?">
+          <form action="catalog.html" method="get" class="user-action-search-form">
+            <input type="text" class="user-action-input" value="Что ищем?">
+          </form>
         </li>
         <li class="user-action user-action-login">
           <button class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
-            <form action="#" class="login-form">
+            <form action="#" method="post" class="login-form">
               <label for="email-field" class="#">Электронная почта</label><br>
               <input type="text" class="user-action-input" id="email-field" name="email"><br>
               <label for="password-field" class="#">Пароль</label><br>
