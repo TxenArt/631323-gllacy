@@ -27,22 +27,22 @@
       <ul class="user-actions">
         <li class="user-action user-action-search">
           <button class="user-action-button user-action-button-search">Поиск</button>
-          <input type="text" class="user-action-input">
+          <input type="text" class="user-action-input" value="Что ищем?">
         </li>
         <li class="user-action user-action-login">
           <button class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" class="login-form">
-              <p><label for="email-field" class="#">Электронная почта</label>
-              <input type="text" class="user-action-input" id="email-field" name="email"></p>
-              <p><label for="password-field" class="#">Пароль</label>
-              <input type="password" class="user-action-input" id="password-field" name="password"></p>
+              <label for="email-field" class="#">Электронная почта</label><br>
+              <input type="text" class="user-action-input" id="email-field" name="email"><br>
+              <label for="password-field" class="#">Пароль</label><br>
+              <input type="password" class="user-action-input" id="password-field" name="password"><br>
               <input type="submit" value="Войти" class="login-submit-button">
+              <ul class="login-help">
+                <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+                <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+              </ul>
             </form>
-            <ul class="login-help">
-              <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
-              <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
-            </ul>
           </div>
         </li>
         <li class="user-action user-action-basket">
