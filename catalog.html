@@ -7,7 +7,9 @@
   <body style="background-color: silver">
     <header class="main-header">
       <div class="logo">
-        <img class="logo-image" src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина 'Глейси-шоп'">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="logo-image" src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина 'Глейси-шоп'">
+        </a>
       </div>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -28,23 +30,21 @@
         <li class="user-action user-action-search">
           <button class="user-action-button user-action-button-search">Поиск</button>
           <form action="catalog.html" method="get" class="user-action-search-form">
-            <input type="text" class="user-action-input" value="Что ищем?">
+            <input type="search" class="user-action-input" value="Что ищем?">
           </form>
         </li>
         <li class="user-action user-action-login">
           <button class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" method="post" class="login-form">
-              <label for="email-field" class="#">Электронная почта</label><br>
-              <input type="text" class="user-action-input" id="email-field" name="email"><br>
-              <label for="password-field" class="#">Пароль</label><br>
-              <input type="password" class="user-action-input" id="password-field" name="password"><br>
+              <input type="email" class="user-action-input" id="email-field" name="email" placeholder="Электронная почта"><br>
+              <input type="password" class="user-action-input" id="password-field" name="password" placeholder="Пароль"><br>
               <input type="submit" value="Войти" class="login-submit-button">
-              <ul class="login-help">
-                <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
-                <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
-              </ul>
             </form>
+            <ul class="login-help">
+              <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+              <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+            </ul>
           </div>
         </li>
         <li class="user-action user-action-basket">
@@ -65,7 +65,56 @@
       <h1 class="page-title">Сливочное мороженное</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма-->
+        <form action="catalog.html" method="post" class="catalog-filter">
+          <div>
+            <p class="calalog-filter-item-title">Сортировка:</p>
+            <select name="sort" id="sort" class="catalog-filter-item">
+              <option value="popular" selected>по популярности</option>
+              <option value="cost-up">сначала недорогие</option>
+              <option value="cost-down">сначала дорогие</option>
+              <option value="by-fat-content">по жирности</option>
+            </select>
+          </div>
+          <div>
+            <p class="calalog-filter-item-title">Цена: 100 руб. – 500 руб.</p>
+              <!--Тут будет ползунок с ценой-->
+          </div>
+          <div>
+            <p class="catalog-filter-item-title">Жирность:</p>
+            <label for="by-fat-0" class="catalog-filter-item">
+              <input type="radio" name="by-fat" id="by-fat-0" class="catalog-filter-item-radio"> 0%
+            </label>
+            <label for="by-fat-to-10" class="catalog-filter-item">
+              <input type="radio" name="by-fat" id="by-fat-to-10" class="catalog-filter-item-radio"> до 10%
+            </label>
+            <label for="by-fat-to-30" class="catalog-filter-item">
+              <input type="radio" name="by-fat" id="by-fat-to-30" class="catalog-filter-item-radio"> до 30%
+            </label>
+            <label for="by-fat-over-30" class="catalog-filter-item">
+              <input type="radio" name="by-fat" id="by-fat-over-30" class="catalog-filter-item-radio"> выше 30%
+            </label>
+          </div>
+          <br>
+          <div>
+            <p class="catalog-filter-item-title">Наполнители:</p>
+            <label for="filler-choco" class="catalog-filter-item">
+              <input type="checkbox" name="filler" id="filler-choco" checked class="catalog-filter-item-checkbox"> шоколадные
+            </label>
+            <label for="filler-sugar" class="catalog-filter-item">
+              <input type="checkbox" name="filler" id="filler-sugar" checked class="catalog-filter-item-checkbox"> сахарные присыпки
+            </label>
+            <label for="filler-fruit" class="catalog-filter-item">
+              <input type="checkbox" name="filler" id="filler-fruit" class="catalog-filter-item-checkbox"> фрукты
+            </label>
+            <label for="filler-syrip" class="catalog-filter-item">
+              <input type="checkbox" name="filler" id="filler-syrip" class="catalog-filter-item-checkbox"> сиропы
+            </label>
+            <label for="filler-jam" class="catalog-filter-item">
+              <input type="checkbox" name="filler" id="filler-jam" class="catalog-filter-item-checkbox"> джем
+            </label>
+          </div>
+          <button class="catalog-filter-button-submit">Применить</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
@@ -208,7 +257,9 @@
         <a class="links-item" href="#">Экологические стандарты</a>
       </section>
       <div class="footer-column copyrigth">
-        <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
       </div>
     </footer>

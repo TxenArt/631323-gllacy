@@ -28,23 +28,21 @@
         <li class="user-action user-action-search">
           <button class="user-action-button user-action-button-search">Поиск</button>
           <form action="catalog.html" method="get" class="user-action-search-form">
-            <input type="text" class="user-action-input" value="Что ищем?">
+            <input type="search" class="user-action-input" value="Что ищем?">
           </form>
         </li>
         <li class="user-action user-action-login">
           <button class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" method="post" class="login-form">
-              <label for="email-field" class="#">Электронная почта</label><br>
-              <input type="text" class="user-action-input" id="email-field" name="email"><br>
-              <label for="password-field" class="#">Пароль</label><br>
-              <input type="password" class="user-action-input" id="password-field" name="password"><br>
+              <input type="email" class="user-action-input" id="email-field" name="email" placeholder="Электронная почта"><br>
+              <input type="password" class="user-action-input" id="password-field" name="password" placeholder="Пароль"><br>
               <input type="submit" value="Войти" class="login-submit-button">
-              <ul class="login-help">
-                <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
-                <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
-              </ul>
             </form>
+            <ul class="login-help">
+              <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+              <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+            </ul>
           </div>
         </li>
         <li class="user-action user-action-basket">
@@ -164,11 +162,9 @@
         <div class="company-contacts-feedback">
           <form action="#" method="post" class="feedback">
             <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
-            <label for="feedback-name-field">Как вас зовут?</label><br>
-            <input type="text" class="user-action-input" name="feedback-name" id="feedback-name-field"><br>
-            <label for="feedback-email-field">Ваша почта для ответа?</label><br>
-            <input type="text" class="user-action-input" name="feedback-email" id="feedback-email-field"><br>
-            <textarea name="feedback-text" id="user-action-input" cols="30" rows="10">Напишите что-нибудь...</textarea><br>
+            <input type="text" class="user-action-input" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?"><br>
+            <input type="email" class="user-action-input" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?"><br>
+            <textarea name="feedback-text" id="user-action-input" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea><br>
             <input type="submit" class="feedback-submit-button" name="feedback-submit" id="feedback-submit" value="Отправить"><br>
             <span class="feedback-close">X</span> 
           </form>
@@ -209,7 +205,9 @@
         <a class="links-item" href="#">Экологические стандарты</a>
       </section>
       <div class="footer-column copyrigth">
-        <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
       </div>
     </footer>
