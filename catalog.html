@@ -28,14 +28,14 @@
       </nav>
       <ul class="user-actions">
         <li class="user-action user-action-search">
-          <button class="user-action-button user-action-button-search">Поиск</button>
+          <button type="button" class="user-action-button user-action-button-search">Поиск</button>
           <form action="catalog.html" method="post" class="user-action-search-form">
             <label for="user-action-search" class="visually-hidden">Что ищем?</label>
             <input type="search" id="user-action-search" name="user-action-search" class="user-action-input" value="Что ищем?">
           </form>
         </li>
         <li class="user-action user-action-login">
-          <button class="user-action-button user-action-button-login">Вход</button>
+          <button type="button" class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" method="post" class="login-form">
               <p class="field">
@@ -57,7 +57,7 @@
           </div>
         </li>
         <li class="user-action user-action-basket">
-          <button class="user-action-button user-action-button-basket-fill">2 товара</button>
+          <button type="button" class="user-action-button user-action-button-basket-fill">2 товара</button>
           <div class="basket">
             <table class="basket-list">
               <tr class="basket-item">
@@ -111,21 +111,21 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="catalog.html" method="post" class="catalog-filter">
-          <div>
-            <p class="calalog-filter-item-title">Сортировка:</p>
+          <fieldset class="catalog-filter-section">
+            <legend class="calalog-filter-item-title">Сортировка:</legend>
             <select name="sort" id="sort" class="catalog-filter-item">
               <option value="popular" selected>по популярности</option>
               <option value="cost-up">сначала недорогие</option>
               <option value="cost-down">сначала дорогие</option>
               <option value="by-fat-content">по жирности</option>
             </select>
-          </div>
-          <div>
-            <p class="calalog-filter-item-title">Цена: 100 руб. – 500 руб.</p>
+          </fieldset>
+          <fieldset class="catalog-filter-section">
+            <legend class="calalog-filter-item-title">Цена: 100 руб. – 500 руб.</legend>
               <!--Тут будет ползунок с ценой-->
-          </div>
-          <div>
-            <p class="catalog-filter-item-title">Жирность:</p>
+          </fieldset>
+          <fieldset class="catalog-filter-section">
+            <legend class="catalog-filter-item-title">Жирность:</legend>
             <label for="by-fat-0" class="catalog-filter-item">
               <input type="radio" name="by-fat" id="by-fat-0" class="catalog-filter-item-radio"> 0%
             </label>
@@ -138,10 +138,10 @@
             <label for="by-fat-over-30" class="catalog-filter-item">
               <input type="radio" name="by-fat" id="by-fat-over-30" class="catalog-filter-item-radio"> выше 30%
             </label>
-          </div>
+          </fieldset>
           <br>
-          <div>
-            <p class="catalog-filter-item-title">Наполнители:</p>
+          <fieldset class="catalog-filter-section">
+            <legend class="catalog-filter-item-title">Наполнители:</legend>
             <label for="filler-choco" class="catalog-filter-item">
               <input type="checkbox" name="filler" id="filler-choco" checked class="catalog-filter-item-checkbox"> шоколадные
             </label>
@@ -157,8 +157,8 @@
             <label for="filler-jam" class="catalog-filter-item">
               <input type="checkbox" name="filler" id="filler-jam" class="catalog-filter-item-checkbox"> джем
             </label>
-          </div>
-          <button class="catalog-filter-button-submit">Применить</button>
+          </fieldset>
+          <button type="submit" class="catalog-filter-button-submit">Применить</button>
         </form>
       </section>
       <section class="catalog">

@@ -26,14 +26,14 @@
       </nav>
       <ul class="user-actions">
         <li class="user-action user-action-search">
-          <button class="user-action-button user-action-button-search">Поиск</button>
+          <button type="button" class="user-action-button user-action-button-search">Поиск</button>
           <form action="catalog.html" method="post" class="user-action-search-form">
             <label for="user-action-search" class="visually-hidden">Что ищем?</label>
             <input type="search" id="user-action-search" name="user-action-search" class="user-action-input" value="Что ищем?">
           </form>
         </li>
         <li class="user-action user-action-login">
-          <button class="user-action-button user-action-button-login">Вход</button>
+          <button type="button" class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" method="post" class="login-form">
               <p class="field">
@@ -55,7 +55,7 @@
           </div>
         </li>
         <li class="user-action user-action-basket">
-          <button class="user-action-button user-action-button-basket">Корзина</button>
+          <button type="button" class="user-action-button user-action-button-basket">Корзина</button>
         </li>
       </ul>
       <div class="header-contacts">
@@ -93,12 +93,12 @@
         <article class="promo-banner">
           <h3 class="promo-banner-title">Малинка даром!</h3>
           <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="promo-banner-button">Хочу варенье!</button>
+          <a href="#" class="promo-banner-button">Хочу варенье!</a>
         </article>
         <article class="promo-banner">
           <h3 class="promo-banner-title">Шоколадки даром!</h3>
           <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="promo-banner-button">Хочу шоколадки!</button>
+          <a href="#" class="promo-banner-button">Хочу шоколадки!</a>
         </article>
       </section>
       <section class="catalog">
@@ -154,8 +154,14 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Рассылка</h2>
         <p class="subsribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <input type="text">
-        <button class="main-button">Отправить</button> 
+        <form action="#" method="post" class="subscribe-form">
+          <p class="field">
+            <label for="subscribe-email-field" class="field-label">Электронная почта
+              <input type="email" class="user-action-input" id="subscribe-email-field" name="subscribe-email" placeholder="Электронная почта">
+            </label>
+          </p>
+          <button type="submit" class="main-button">Отправить</button>
+        </form> 
       </section>
       <div class="interactive-map">
         <img src="img/interactive-map.png" alt="Карта">
