@@ -29,17 +29,26 @@
       <ul class="user-actions">
         <li class="user-action user-action-search">
           <button class="user-action-button user-action-button-search">Поиск</button>
-          <form action="catalog.html" method="get" class="user-action-search-form">
-            <input type="search" class="user-action-input" value="Что ищем?">
+          <form action="catalog.html" method="post" class="user-action-search-form">
+            <label for="user-action-search" class="visually-hidden">Что ищем?</label>
+            <input type="search" id="user-action-search" name="user-action-search" class="user-action-input" value="Что ищем?">
           </form>
         </li>
         <li class="user-action user-action-login">
           <button class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
             <form action="#" method="post" class="login-form">
-              <input type="email" class="user-action-input" id="email-field" name="email" placeholder="Электронная почта"><br>
-              <input type="password" class="user-action-input" id="password-field" name="password" placeholder="Пароль"><br>
-              <input type="submit" value="Войти" class="login-submit-button">
+              <p class="field">
+                <label for="field-email" class="field-label">Электронная почта
+                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта">
+                </label>
+              </p>
+              <p class="field">
+                <label for="field-password" class="field-label">Пароль
+                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль">
+                </label>
+              </p>
+              <button type="submit" class="login-submit-button">Войти</button>
             </form>
             <ul class="login-help">
               <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
@@ -50,35 +59,40 @@
         <li class="user-action user-action-basket">
           <button class="user-action-button user-action-button-basket-fill">2 товара</button>
           <div class="basket">
-            <table class="basket-in">
-              <tr class="basket-in-item">
-                <td class="basket-in-item-del">
-                  <span>X</span>
+            <table class="basket-list">
+              <tr class="basket-item">
+                <td class="basket-item-remove">
+                  <button type="button" class="basket-item-remove-button">
+                    <img src="img/svg-gllacy/cross-small.svg" width="11" height="11" alt="Удалить товар из корзины">
+                  </button>
                 </td>
-                <td class="basket-in-item-image">
+                <td class="basket-item-img">
                   <img src="img/basket-in/basket-item-1.jpg" alt="Товар из корзины" width="33" height="33">
                 </td>
-                <td class="basket-in-item-title">Пломбир с апельсиновым джемом</td>
-                <td class="basket-in-item-mass">1,5 кг х </td>
-                <td class="basket-in-item-cost">200 руб.</td>
-                <td class="basket-in-item-result">300 руб.</td>
+                <td class="basket-item-title">Пломбир с апельсиновым джемом</td>
+                <td class="basket-item-mass">1,5 кг х </td>
+                
+                <td class="basket-item-cost">200 руб.</td>
+                <td class="basket-item-result">300 руб.</td>
               </tr>
-              <tr class="basket-in-item">
-                <td class="basket-in-item-del">
-                  <span>X</span>
+              <tr class="basket-item">
+                <td class="basket-item-remove">
+                  <button type="button" class="basket-item-remove-button">
+                    <img src="img/svg-gllacy/cross-small.svg" width="11" height="11" alt="Удалить товар из корзины">
+                  </button>
                 </td>
-                <td class="basket-in-item-image">
+                <td class="basket-item-img">
                   <img src="img/basket-in/basket-item-2.jpg" alt="Товар из корзины" width="33" height="33">
                 </td>
-                <td class="basket-in-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="basket-in-item-mass">1,5 кг х </td>
-                <td class="basket-in-item-cost">300 руб.</td>
-                <td class="basket-in-item-result">450 руб.</td>
+                <td class="basket-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="basket-item-mass">1,5 кг х </td>
+                <td class="basket-item-cost">300 руб.</td>
+                <td class="basket-item-result">450 руб.</td>
               </tr>
             </table>
-            <hr class="basket-in-line">
-            <p class="basket-in-result">Итого: 750 руб.</p>
-            <button class="basket-submit-button">Оформить заказ</button>
+            <hr class="basket-line">
+            <p class="basket-result">Итого: 750 руб.</p>
+            <button type="submit" class="basket-submit-button">Оформить заказ</button>
           </div>
         </li>
       </ul>
@@ -150,7 +164,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item1.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item1.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
@@ -158,7 +172,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item2.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item2.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
@@ -166,7 +180,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item3.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item3.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
@@ -174,7 +188,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item4.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item4.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
@@ -182,7 +196,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item5.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item5.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное с брусничным джемом</a>
           </h3>
@@ -190,7 +204,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item6.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item6.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
           </h3>
@@ -198,7 +212,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item7.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item7.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </h3>
@@ -206,7 +220,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item8.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item8.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное с шоколадной стружкой</a>
           </h3>
@@ -214,7 +228,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item9.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item9.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
           </h3>
@@ -222,7 +236,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item10.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item10.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
            <a href="#">Сливочноe с ментоловым сиропом</a>
           </h3>
@@ -230,7 +244,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item11.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item11.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное с кусочками черного шоколада</a>
           </h3>
@@ -238,7 +252,7 @@
           <a href="#" class="catalog-item-button">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/catalog-item/catalog-item12.jpg" class="catalog-item-image" alt="Товар из каталога">
+          <img src="img/catalog-item/catalog-item12.jpg" class="catalog-item-image" width="267" height="267" alt="Товар из каталога">
           <h3 class="catalog-item-title">
             <a href="#">Сливочное с мятным сиропом</a>
           </h3>
