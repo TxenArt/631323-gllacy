@@ -27,7 +27,7 @@
       <ul class="user-actions">
         <li class="user-action user-action-search">
           <button type="button" class="user-action-button user-action-button-search">Поиск</button>
-          <form action="catalog.html" method="post" class="user-action-search-form">
+          <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
             <label for="user-action-search" class="visually-hidden">Что ищем?</label>
             <input type="search" id="user-action-search" name="user-action-search" class="user-action-input" value="Что ищем?">
           </form>
@@ -35,15 +35,15 @@
         <li class="user-action user-action-login">
           <button type="button" class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
-            <form action="#" method="post" class="login-form">
+            <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
               <p class="field">
                 <label for="field-email" class="field-label">Электронная почта
-                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта">
+                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта" required>
                 </label>
               </p>
               <p class="field">
                 <label for="field-password" class="field-label">Пароль
-                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль">
+                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль" required>
                 </label>
               </p>
               <button type="submit" class="login-submit-button">Войти</button>
@@ -175,21 +175,21 @@
         <br>(с 10 до 20 ежедневно)
         <button type="button" class="company-contacts-feedback-button">Форма обратной связи</button>
         <div class="company-contacts-feedback">
-          <form action="#" method="post" class="feedback">
+          <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
             <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
             <p class="field">
               <label for="feedback-name-field" class="field-label">Как вас зовут?
-                <input type="text" class="user-action-input" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
+                <input type="text" class="user-action-input" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?" required>
               </label>
             </p>
             <p class="field">
               <label for="feedback-email-field" class="field-label">Ваша почта для ответа?
-                <input type="email" class="user-action-input" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+                <input type="email" class="user-action-input" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?" required>
               </label>
             </p>
             <p class="field">
               <label for="feedback-text-field" class="field-label">
-                <textarea name="feedback-text" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+                <textarea name="feedback-text" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..." required></textarea>
               </label>
             </p>
             <button type="submit" class="feedback-submit-button">Отправить</button>

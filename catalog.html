@@ -29,7 +29,7 @@
       <ul class="user-actions">
         <li class="user-action user-action-search">
           <button type="button" class="user-action-button user-action-button-search">Поиск</button>
-          <form action="catalog.html" method="post" class="user-action-search-form">
+          <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
             <label for="user-action-search" class="visually-hidden">Что ищем?</label>
             <input type="search" id="user-action-search" name="user-action-search" class="user-action-input" value="Что ищем?">
           </form>
@@ -37,15 +37,15 @@
         <li class="user-action user-action-login">
           <button type="button" class="user-action-button user-action-button-login">Вход</button>
           <div class="user-action-login-popup">
-            <form action="#" method="post" class="login-form">
+            <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
               <p class="field">
                 <label for="field-email" class="field-label">Электронная почта
-                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта">
+                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта" required>
                 </label>
               </p>
               <p class="field">
                 <label for="field-password" class="field-label">Пароль
-                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль">
+                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль" required>
                 </label>
               </p>
               <button type="submit" class="login-submit-button">Войти</button>
