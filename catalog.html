@@ -39,14 +39,12 @@
           <div class="user-action-login-popup">
             <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
               <p class="field">
-                <label for="field-email" class="field-label">Электронная почта
-                  <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта" required>
-                </label>
+                <label for="field-email" class="field-label">Электронная почта</label>
+                <input type="email" class="user-action-input" id="field-email" name="email" placeholder="Электронная почта" required>
               </p>
               <p class="field">
-                <label for="field-password" class="field-label">Пароль
-                  <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль" required>
-                </label>
+                <label for="field-password" class="field-label">Пароль</label>
+                <input type="password" class="user-action-input" id="field-password" name="password" placeholder="Пароль" required>
               </p>
               <button type="submit" class="login-submit-button">Войти</button>
             </form>
@@ -62,34 +60,30 @@
             <table class="basket-list">
               <tr class="basket-item">
                 <td class="basket-item-remove">
-                  <button type="button" class="basket-item-remove-button">
-                    <img src="img/svg-gllacy/cross-small.svg" width="11" height="11" alt="Удалить товар из корзины">
-                  </button>
+                  <button type="button" class="basket-item-remove-button">Удалить товар из корзины</button>
                 </td>
                 <td class="basket-item-img">
                   <img src="img/basket-in/basket-item-1.jpg" alt="Товар из корзины" width="33" height="33">
                 </td>
                 <td class="basket-item-title">Пломбир с апельсиновым джемом</td>
-                <td class="basket-item-mass">1,5 кг х <span class="basket-item-cost">300 руб.</span></td>
+                <td class="basket-item-mass">1,5 кг &#215; <span class="basket-item-cost">300 руб.</span></td>
                 <td class="basket-item-result">300 руб.</td>
               </tr>
               <tr class="basket-item">
                 <td class="basket-item-remove">
-                  <button type="button" class="basket-item-remove-button">
-                    <img src="img/svg-gllacy/cross-small.svg" width="11" height="11" alt="Удалить товар из корзины">
-                  </button>
+                  <button type="button" class="basket-item-remove-button">Удалить товар из корзины</button>
                 </td>
                 <td class="basket-item-img">
                   <img src="img/basket-in/basket-item-2.jpg" alt="Товар из корзины" width="33" height="33">
                 </td>
                 <td class="basket-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="basket-item-mass">1,5 кг х <span class="basket-item-cost">300 руб.</span></td>
+                <td class="basket-item-mass">1,5 кг &#215; <span class="basket-item-cost">300 руб.</span></td>
                 <td class="basket-item-result">450 руб.</td>
               </tr>
             </table>
             <hr class="basket-line">
             <p class="basket-result">Итого: 750 руб.</p>
-            <button type="submit" class="basket-submit-button">Оформить заказ</button>
+            <button type="button" class="basket-submit-button">Оформить заказ</button>
           </div>
         </li>
       </ul>
@@ -119,7 +113,14 @@
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="calalog-filter-item-title">Цена: 100 руб. – 500 руб.</legend>
-              <!--Тут будет ползунок с ценой-->
+            <div class="catalog-filter-item">
+              <div class="catalog-filter-item-price">
+                <div class="catalog-filter-item-price-range">
+                  <div class="catalog-filter-item-price-range-toggle-min"></div>
+                  <div class="catalog-filter-item-price-range-toggle-max"></div>
+                </div>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Жирность:</legend>
