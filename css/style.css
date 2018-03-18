@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  
+  background-color: #849d8f;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.main-navigation-list li {
+  list-style: none;
+}
+
+.main-navigation-list a {
+  color: #ffffff;
+}
+
+.main-navigation-list a:hover, 
+.main-navigation-list a:focus {
+  color: #333333;
+  background-color: #f7f6f3;
+}
+
+.main-navigation-item-catalog-menu{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #f8f7f4;
+}
+
+.main-navigation-item-catalog-title,
+.main-navigation-item-catalog-menu a {
+  color: #323232;
+}
+
+.main-navigation-item-catalog-menu a:hover,
+.main-navigation-item-catalog-menu a:focus {
+  color: #323232;
+  background-color: #fbded7;
+}
+
+.user-actions li{
+  list-style: none;
+}
+
+.user-action-button {
+  background-color: #ffffff;
+  opacity: 0.2;
+  border: none;
+}
+
+.user-action-button-search {
+  width: 320px;
+  height: 320px;
+  outline: 1px solid red;
+  background-image: url("img/svg-gllacy/loupe.svg");
+}
