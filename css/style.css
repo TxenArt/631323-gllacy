@@ -55,14 +55,63 @@ body {
 }
 
 .user-action-button {
-  background-color: #ffffff;
-  opacity: 0.2;
+  background-color: rgba(255,255,255,0.2);
   border: none;
 }
 
-.user-action-button-search {
-  width: 320px;
-  height: 320px;
-  outline: 1px solid red;
-  background-image: url("img/svg-gllacy/loupe.svg");
+.user-action-button:hover,
+.user-action-button:focus {
+  background-color: rgb(248,247,244);
 }
+
+.user-action-button-search {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/svg-gllacy/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.user-action-button-search:hover,
+.user-action-button-search:focus {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/svg-gllacy/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.field-input {
+  font-size: 14px;
+  line-height: 24px;
+  height: 44px;
+  border: 1px solid #d3d3d2;
+}
+
+.user-action-button-login {
+  width: 92px;
+  height: 32px;
+  background-image: url("../img/svg-gllacy/entrance.svg");
+  background-repeat: no-repeat;
+}
+
+.user-action-search-form,
+.user-action-login-popup {
+  background-color: rgb(248,247,244);
+}
+
+
+.field-label {
+  color: #999999;
+}
+
+
+
+
+
+
+
+
+
