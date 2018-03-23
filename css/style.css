@@ -558,3 +558,49 @@ body {
   background-color: #ffffff;
   color: #323232;
 }
+
+/*Стили для сетки*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2416px;
+}
+
+.main-header {
+  margin: 0px 27px;
+  min-height: 112px;
+  outline: 2px solid white;
+}
+
+.main-header-wrapper {
+  display: flex;
+  outline: 2px solid red;
+}
+
+.logo {
+  outline: 2px solid silver;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation {
+  outline: 2px solid blue;
+  margin: 0;
+  padding: 0;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: row;
+  outline: 2px solid green;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  min-width: 262px;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0px 27px;
+}
