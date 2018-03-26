@@ -7,8 +7,24 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  
+}
+
+.main-container {
   background-color: #849d8f;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .button {
@@ -21,6 +37,8 @@ body {
   background-color: #f16442;
   border: none;
   border-radius: 22px;
+  display: block;
+  text-align: center;
 }
 
 .button:hover,
@@ -561,33 +579,34 @@ body {
 
 /*Стили для сетки*/
 
-html,
-body {
-  min-width: 1200px;
-  min-height: 2416px;
-}
-
 .main-header {
-  margin: 0px 27px;
-  min-height: 112px;
-  outline: 2px solid white;
+  padding-top: 9px;
+  min-height: 72px;
 }
 
 .main-header-wrapper {
   display: flex;
   outline: 2px solid red;
+  align-items: center;
 }
 
 .logo {
-  outline: 2px solid silver;
-  margin: 0;
-  padding: 0;
+  padding-left: 27px;
 }
 
 .main-navigation {
-  outline: 2px solid blue;
-  margin: 0;
   padding: 0;
+  outline: 2px solid blue;
+}
+
+.main-navigation-list {
+  display: flex;
+  min-width: 349px;
+  justify-content: space-between;
+}
+
+.main-navigation-link {
+  display: block;
 }
 
 .user-actions {
@@ -597,10 +616,76 @@ body {
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-right: 27px;
   min-width: 262px;
   justify-content: space-between;
 }
 
-.container {
-  margin: 0px 27px;
+.promo-box {
+  display: flex;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  outline: 2px solid white;
+}
+
+.promo-banner {
+  width: 560px;
+  min-height: 229px;
+}
+
+.catalog {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-right: 27px;
+  padding-left: 27px;
+  outline: 2px solid blue;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+  text-align: center;
+  outline: 2px dotted white;
+}
+
+.catalog-item-top-mark {
+  display: contents;
+  position: relative;
+  top: 10px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  display: flex;
+  width: 560px;
+  min-height: 220px;
+}
+
+.subscribe {
+  display: flex;
+  width: 560px;
+  min-height: 220px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-width: 185px;
 }
