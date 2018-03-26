@@ -15,8 +15,10 @@ body {
 
 .container {
   width: 1200px;
+  padding: 0 27px 0 27px;
   margin: 0 auto;
   outline: 1px solid black;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -310,12 +312,12 @@ body {
   line-height: 41px;
 }
 
-.promo-box article:first-of-type {
+.promo-banner-berry {
   background-color: #9c1b36;
   background-image: url(../img/backgrounds/bg-promo-raspb.jpg);
 }
 
-.promo-box article:last-of-type {
+.promo-banner-choco {
   background-color: #723f1c;
   background-image: url(../img/backgrounds/bg-promo-chocolate.jpg);
 }
@@ -339,8 +341,8 @@ body {
 }
 
 .catalog-item-button {
-  width: 200;
-  height: 44;
+  width: 200px;
+  height: 44px;
   border-radius: 19px 22px;
 }
 
@@ -423,20 +425,22 @@ body {
   line-height: 20px;
 }
 
-.company-contacts-address + p {
+.company-contacts-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.company-contacts-text span {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.company-contacts-phone + p {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-.company-contacts p:nth-of-type(5) {
-  line-height: 22px;
+.company-contacts {
+  background-color: rgba(255,255,255,0.98);
+  width: 302px;
+  max-height: 305px;
+  overflow: auto;
 }
 
 .feedback-title {
@@ -591,7 +595,6 @@ body {
 }
 
 .logo {
-  padding-left: 27px;
 }
 
 .main-navigation {
@@ -616,15 +619,12 @@ body {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  padding-right: 27px;
   min-width: 262px;
   justify-content: space-between;
 }
 
 .promo-box {
   display: flex;
-  padding-left: 27px;
-  padding-right: 27px;
   margin-bottom: 40px;
   justify-content: space-between;
   outline: 2px solid white;
@@ -639,8 +639,6 @@ body {
   display: flex;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding-right: 27px;
-  padding-left: 27px;
   outline: 2px solid blue;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -667,13 +665,13 @@ body {
 }
 
 .news {
-  display: flex;
+  display: inline-block;
   width: 560px;
   min-height: 220px;
 }
 
 .subscribe {
-  display: flex;
+  display: inline-block;
   width: 560px;
   min-height: 220px;
 }
@@ -688,4 +686,24 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   min-width: 185px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter-section-sort {
+  width: 193px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: flex-end;
 }
