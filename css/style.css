@@ -298,12 +298,10 @@ body {
   border-radius: 10px;
 }
 
-.promo-box {
+.promo-banner-berry,
+.promo-banner-choco {
   font-size: 18px;
   font-weight: 700;
-}
-
-.promo-banner {
   line-height: 22px;
 }
 
@@ -408,8 +406,8 @@ body {
 
 .subscribe {
   background-color: #ffffff;
-  background-image: url(../img/backgrounds/bg-post.svg);
   color: #5a5a5a;
+  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 6px,#fe9e90 6px, #fe9e90 14px, #f8f7f4 14px, #f8f7f4 20px, #92cdff 20px, #92cdff 28px);
 }
 
 .subscribe-button {
@@ -623,16 +621,20 @@ body {
   justify-content: space-between;
 }
 
-.promo-box {
+.container-row {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
   outline: 2px solid white;
 }
 
-.promo-banner {
+.promo-banner-berry,
+.promo-banner-choco {
+  display: flex;
   width: 560px;
   min-height: 229px;
+  flex-direction: column;
+  
 }
 
 .catalog {
@@ -662,16 +664,17 @@ body {
 .about-us {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .news {
-  display: inline-block;
+  display: flex;
   width: 560px;
   min-height: 220px;
 }
 
 .subscribe {
-  display: inline-block;
+  display: flex;
   width: 560px;
   min-height: 220px;
 }
