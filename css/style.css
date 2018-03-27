@@ -324,6 +324,10 @@ body {
   font-weight: 500;
 }
 
+.catalog-item .link {
+  padding: 0;
+}
+
 .catalog-item-price {
   font-weight: 700;
   font-size: 45px;
@@ -405,9 +409,9 @@ body {
 }
 
 .subscribe {
-  background-color: #ffffff;
   color: #5a5a5a;
   background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 6px,#fe9e90 6px, #fe9e90 14px, #f8f7f4 14px, #f8f7f4 20px, #92cdff 20px, #92cdff 28px);
+  background-color: #f8f7f4;
 }
 
 .subscribe-button {
@@ -555,9 +559,16 @@ body {
 
 .pagination {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 26px;
   font-weight: 500;
   list-style: none;
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-item {
+  margin: 0 2px;
 }
 
 .pagination-link {
@@ -566,6 +577,9 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  
+  display: inline-block;
+  text-align: center;
 }
 
 .pagination-link:hover, 
@@ -573,10 +587,41 @@ body {
   background-color: rgba(255,255,255,0.2);
 }
 
-.pagination-link-current, 
 .pagination-link:active {
   background-color: #ffffff;
   color: #323232;
+}
+
+.pagination-link-current, 
+.pagination-link-current:hover,
+.pagination-link-current:focus {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.pagination-link-disabled {
+  background-image: url(../img/svg-gllacy/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.pagination-link-disabled:hover,
+.pagination-link-disabled:focus,
+.pagination-link-disabled:active {
+  background-color: transparent;
+}
+
+.pagination-link-enabled {
+  background-image: url(../img/svg-gllacy/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagination-link-enabled:hover,
+.pagination-link-enabled:focus,
+.pagination-link-enabled:active {
+  background-color: transparent;
 }
 
 /*Стили для сетки*/
@@ -584,6 +629,7 @@ body {
 .main-header {
   padding-top: 9px;
   min-height: 72px;
+  position: relative;
 }
 
 .main-header-wrapper {
@@ -603,6 +649,7 @@ body {
 .main-navigation-list {
   display: flex;
   min-width: 349px;
+  
   justify-content: space-between;
 }
 
@@ -621,6 +668,12 @@ body {
   justify-content: space-between;
 }
 
+.header-contacts {
+  padding: 0;
+  margin: 0;
+  outline: 1px dotted green;
+}
+
 .container-row {
   display: flex;
   margin-bottom: 40px;
@@ -634,7 +687,7 @@ body {
   width: 560px;
   min-height: 229px;
   flex-direction: column;
-  
+  border-radius: 12px;
 }
 
 .catalog {
@@ -653,11 +706,12 @@ body {
   width: 267px;
   text-align: center;
   outline: 2px dotted white;
+  position: relative;
 }
 
 .catalog-item-top-mark {
   display: contents;
-  position: relative;
+  position: absolute;
   top: 10px;
 }
 
@@ -669,14 +723,17 @@ body {
 
 .news {
   display: flex;
+  flex-direction: column;
   width: 560px;
   min-height: 220px;
+  border-radius: 12px;
 }
 
 .subscribe {
   display: flex;
   width: 560px;
   min-height: 220px;
+  border-radius: 12px;
 }
 
 .main-footer {
@@ -706,7 +763,3 @@ body {
   width: 193px;
 }
 
-.pagination{
-  display: flex;
-  justify-content: flex-end;
-}
