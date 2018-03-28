@@ -73,6 +73,35 @@ body {
   line-height: 18px;
   color: inherit;
   font-weight: 700;
+  
+  outline: 2px solid blue;
+  padding-left: 0px;
+  margin-left: 9px;
+  padding-bottom: 9px;
+  max-width: 650px;
+}
+
+.main-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  position: relative;
+}
+
+.main-navigation-item:hover .main-navigation-sub-menu {
+  display: block;
+}
+
+.main-navigation-sub-menu {
+  position: absolute;
+  display: ;
+  padding-left: 21px;
+  border-radius: 5px;
+}
+
+.main-navigation-sub-menu-button {
+  height: 28px;
 }
 
 .main-navigation-item,
@@ -81,7 +110,13 @@ body {
 }
 
 .main-navigation-link {
+  display: inline-block;
   color: #ffffff;
+  line-height: 30px;
+  padding: 0 14px;
+  height: 32px;
+  border-radius: 16px;
+  display: block;
 }
 
 .main-navigation-link:hover, 
@@ -320,34 +355,6 @@ body {
   background-image: url(../img/backgrounds/bg-promo-chocolate.jpg);
 }
 
-.catalog-item-title .link {
-  font-weight: 500;
-}
-
-.catalog-item .link {
-  padding: 0;
-}
-
-.catalog-item-price {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.catalog-item-mass {
-  font-size: 30px;
-}
-
-.catalog-item img {
-  border-radius: 50%;
-}
-
-.catalog-item-button {
-  width: 200px;
-  height: 44px;
-  border-radius: 19px 22px;
-}
-
 .about-us {
   color: #323232;
   background-color: #e7d5b1;
@@ -514,9 +521,81 @@ body {
   font-weight: 500;
 }
 
-.catalog-filter-item-title {
-  font-size: 14px;
-  line-height: 16px;
+.catalog {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 267px;
+  text-align: center;
+  position: relative;
+}
+
+.catalog-item-top-mark {
+  position: absolute;
+}
+
+.ruble {
+  display: inline-block;
+  background-image: url(../img/svg-gllacy/ruble.svg);
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 36px;
+}
+
+.catalog-item-title {
+  margin-top: 8px;
+}
+
+.catalog-item-title .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.catalog-item-price {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  position: absolute;
+  margin: 0 auto;
+  top: 215px;
+}
+
+.catalog-item-mass {
+  font-size: 30px;
+}
+
+.catalog-item img {
+  border-radius: 50%;
+}
+
+.catalog-item-button {
+  width: 200px;
+  height: 44px;
+  border-radius: 19px 22px;
+  position: absolute;
+  bottom: -33px;
+  left: 33px;
+  z-index: 200;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 879px;
+  margin-bottom: 40px;
+}
+
+.catalog-filter-section-sort {
+  width: 193px;
 }
 
 .catalog-filter-section {
@@ -600,7 +679,7 @@ body {
 }
 
 .pagination-link-disabled {
-  background-image: url(../img/svg-gllacy/icon-right-small.svg);
+  background-image: url(../img/svg-gllacy/icon-right-small-disabled.svg);
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
@@ -613,7 +692,7 @@ body {
 }
 
 .pagination-link-enabled {
-  background-image: url(../img/svg-gllacy/icon-right-small.svg);
+  background-image: url(../img/svg-gllacy/icon-right-small-enabled.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -627,58 +706,46 @@ body {
 /*Стили для сетки*/
 
 .main-header {
-  padding-top: 9px;
+  padding-top: 8px;
   min-height: 72px;
   position: relative;
 }
 
 .main-header-wrapper {
   display: flex;
-  outline: 2px solid red;
   align-items: center;
-}
-
-.logo {
-}
-
-.main-navigation {
-  padding: 0;
-  outline: 2px solid blue;
-}
-
-.main-navigation-list {
-  display: flex;
-  min-width: 349px;
-  
-  justify-content: space-between;
-}
-
-.main-navigation-link {
-  display: block;
 }
 
 .user-actions {
   display: flex;
   flex-direction: row;
-  outline: 2px solid green;
   margin: 0;
   margin-left: auto;
-  padding: 0;
+  padding-bottom: 6px;
   min-width: 262px;
   justify-content: space-between;
 }
 
 .header-contacts {
+  position: absolute;
+  right: 27px;
+  top: 75px;
   padding: 0;
   margin: 0;
-  outline: 1px dotted green;
+}
+
+.header-worktime {
+  display: inline;
+}
+
+.header-contact-phone {
+  display: inline;
 }
 
 .container-row {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
-  outline: 2px solid white;
 }
 
 .promo-banner-berry,
@@ -688,31 +755,6 @@ body {
   min-height: 229px;
   flex-direction: column;
   border-radius: 12px;
-}
-
-.catalog {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  outline: 2px solid blue;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-.catalog-item {
-  display: flex;
-  flex-direction: column;
-  width: 267px;
-  text-align: center;
-  outline: 2px dotted white;
-  position: relative;
-}
-
-.catalog-item-top-mark {
-  display: contents;
-  position: absolute;
-  top: 10px;
 }
 
 .about-us {
@@ -753,13 +795,3 @@ body {
   list-style: none;
   flex-wrap: wrap;
 }
-
-.catalog-filter {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.catalog-filter-section-sort {
-  width: 193px;
-}
-
