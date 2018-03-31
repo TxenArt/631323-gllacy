@@ -30,10 +30,10 @@
             <li class="main-navigation-item"><a href="#" class="main-navigation-link">Оплата и доставка</a></li>
             <li class="main-navigation-item"><a href="#" class="main-navigation-link">О Компании</a></li>
           </ul>
-      </nav>
+        </nav>
         <ul class="user-actions">
           <li class="user-action user-action-search">
-            <button type="button" class="user-action-button user-action-button-search">Поиск</button>
+            <button type="button" class="user-action-button user-action-button-search"><span class="visually-hidden">Поиск</span></button>
 <!--
             <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
               <label for="user-action-search" class="visually-hidden">Что ищем?</label>
@@ -122,57 +122,47 @@
               <option value="cost-up">сначала недорогие</option>
               <option value="cost-down">сначала дорогие</option>
               <option value="by-fat-content">по жирности</option>
+              <span class="select-icon"></span>
             </select>
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Цена: 100 руб. – 500 руб.</legend>
-            <div class="catalog-filter-item">
-              <div class="catalog-filter-item-price">
-                <div class="catalog-filter-item-price-range">
-                  <div class="catalog-filter-item-price-range-toggle-min"></div>
-                  <div class="catalog-filter-item-price-range-toggle-max"></div>
-                </div>
+            <div class="catalog-filter-item catalog-filter-item-price">
+              <div class="catalog-filter-item-price-range">
+                <div class="catalog-filter-item-price-range-toggle-min"></div>
+                <div class="catalog-filter-item-price-range-toggle-max"></div>
               </div>
             </div>
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Жирность:</legend>
             <div class="catalog-filter-item">
-              <label for="by-fat-0">
-                <input type="radio" name="by-fat" id="by-fat-0" class="catalog-filter-item-radio"> 0%
-              </label>
-              <label for="by-fat-to-10">
-                <input type="radio" name="by-fat" id="by-fat-to-10" class="catalog-filter-item-radio"> до 10%
-              </label>
-              <label for="by-fat-to-30">
-                <input type="radio" name="by-fat" id="by-fat-to-30" class="catalog-filter-item-radio"> до 30%
-              </label>
-              <label for="by-fat-over-30">
-                <input type="radio" name="by-fat" id="by-fat-over-30" class="catalog-filter-item-radio"> выше 30%
-              </label>
+              <input type="radio" name="by-fat" id="by-fat-0" class="visually-hidden catalog-filter-item-radio">
+              <label for="by-fat-0" class="catalog-filter-label">0%</label>
+              <input type="radio" name="by-fat" id="by-fat-to-10" class="visually-hidden catalog-filter-item-radio">
+              <label for="by-fat-to-10" class="catalog-filter-label">до 10%</label>
+              <input type="radio" name="by-fat" id="by-fat-to-30" class="visually-hidden catalog-filter-item-radio">
+              <label for="by-fat-to-30" class="catalog-filter-label">до 30%</label>
+              <input type="radio" name="by-fat" id="by-fat-over-30" class="visually-hidden catalog-filter-item-radio">
+              <label for="by-fat-over-30" class="catalog-filter-label">выше 30%</label>
             </div>
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Наполнители:</legend>
             <div class="catalog-filter-item">
-              <label for="filler-choco">
-                <input type="checkbox" name="filler" id="filler-choco" checked class="catalog-filter-item-checkbox"> шоколадные
-              </label>
-              <label for="filler-sugar">
-                <input type="checkbox" name="filler" id="filler-sugar" checked class="catalog-filter-item-checkbox"> сахарные присыпки
-              </label>
-              <label for="filler-fruit">
-                <input type="checkbox" name="filler" id="filler-fruit" class="catalog-filter-item-checkbox"> фрукты
-              </label>
-              <label for="filler-syrip">
-                <input type="checkbox" name="filler" id="filler-syrip" class="catalog-filter-item-checkbox"> сиропы
-              </label>
-              <label for="filler-jam">
-                <input type="checkbox" name="filler" id="filler-jam" class="catalog-filter-item-checkbox"> джем
-              </label>
+              <input type="checkbox" name="filler" id="filler-choco" checked class="visually-hidden catalog-filter-item-checkbox"> 
+              <label for="filler-choco" class="catalog-filter-label">шоколадные</label>
+              <input type="checkbox" name="filler" id="filler-sugar" checked class="visually-hidden catalog-filter-item-checkbox">
+              <label for="filler-sugar" class="catalog-filter-label">сахарные присыпки</label>
+              <input type="checkbox" name="filler" id="filler-fruit" class="visually-hidden catalog-filter-item-checkbox">
+              <label for="filler-fruit" class="catalog-filter-label">фрукты</label>
+              <input type="checkbox" name="filler" id="filler-syrip" class="visually-hidden catalog-filter-item-checkbox">
+              <label for="filler-syrip" class="catalog-filter-label">сиропы</label>
+              <input type="checkbox" name="filler" id="filler-jam" class="visually-hidden catalog-filter-item-checkbox">
+              <label for="filler-jam" class="catalog-filter-label">джем</label>
             </div>
           </fieldset>
-          <button type="submit" class="catalog-filter-item catalog-filter-button-submit">Применить</button>
+          <button type="submit" class="catalog-filter-item catalog-filter-section catalog-filter-button-submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
@@ -311,11 +301,21 @@
         </ul>
       </section>
       <section class="footer-column">
+        <ul class="footer-column-links">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <a class="link footer-links" href="#">Для поставщиков</a>
-        <a class="link footer-links" href="#">О производстве</a>
-        <a class="link footer-links" href="#">Наши документы</a>
-        <a class="link footer-links" href="#">Экологические стандарты</a>
+          <li class="footer-links">
+            <a class="link footer-links-item footer-links-item-bold" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">Наши документы</a> 
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">О производстве</a> 
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">Экологические стандарты</a> 
+          </li>
+        </ul>
       </section>
       <div class="footer-column">
         <a href="https://htmlacademy.ru/intensive/htmlcss">

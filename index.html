@@ -31,13 +31,11 @@
         </nav>
         <ul class="user-actions">
           <li class="user-action user-action-search">
-            <button type="button" class="user-action-button user-action-button-search">Поиск</button>
-            <!--
-          <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
-            <label for="user-action-search" class="field-label">Что ищем?</label>
-            <input type="search" id="user-action-search" name="user-action-search" class="field-input" value="Что ищем?">
-          </form>
--->
+            <button type="button" class="user-action-button user-action-button-search"><span class="visually-hidden">Поиск</span></button>  
+            <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
+              <label for="user-action-search" class="field-label">Что ищем?</label>
+              <input type="search" id="user-action-search" name="user-action-search" class="field-input" value="Что ищем?">
+            </form>
           </li>
           <li class="user-action user-action-login">
             <button type="button" class="user-action-button user-action-button-login">Вход</button>
@@ -120,9 +118,7 @@
             </h3>
             <span class="catalog-item-top-mark"><img src="img/svg-gllacy/hit.svg" width="61" height="61" alt="Хит"></span>
             <p class="catalog-item-price">310<span class="ruble"></span><span class="catalog-item-mass">/кг</span></p>
-            <div class="catalog-item-preview">
-              <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
-            </div>
+            <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
           </article>
           <article class="catalog-item">
             <img src="img/catalog-item/catalog-item2.jpg" class="catalog-item-img" width="267" height="267" alt="Товар из каталога">
@@ -131,9 +127,7 @@
             </h3>
             <span class="catalog-item-top-mark"><img src="img/svg-gllacy/hit.svg" width="61" height="61" alt="Хит"></span>
             <p class="catalog-item-price">380<span class="ruble"></span><span class="catalog-item-mass">/кг</span></p>
-            <div class="catalog-item-preview">
-              <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
-            </div>
+            <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
           </article>
           <article class="catalog-item">
             <img src="img/catalog-item/catalog-item3.jpg" class="catalog-item-img" width="267" height="267" alt="Товар из каталога">
@@ -142,9 +136,7 @@
             </h3>
             <span class="catalog-item-top-mark"><img src="img/svg-gllacy/hit.svg" width="61" height="61" alt="Хит"></span>
             <p class="catalog-item-price">355<span class="ruble"></span><span class="catalog-item-mass">/кг</span></p>
-            <div class="catalog-item-preview">
-              <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
-            </div>
+            <a href="#" class="button catalog-item-button">Быстрый просмотр</a>
           </article>
           <article class="catalog-item">
             <img src="img/catalog-item/catalog-item4.jpg" class="catalog-item-img" width="267" height="267" alt="Товар из каталога">
@@ -159,8 +151,8 @@
         <section class="about-us">
           <h2 class="about-us-title">Магазин Глэйси &#8212; это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <p class="about-us-article">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <p class="about-us-article">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           <p class="about-us-article">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="about-us-article">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           <p class="about-us-article">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </section>
         <div class="container-row">
@@ -173,8 +165,8 @@
             <p class="subsribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="#" method="post" class="subscribe-form">
               <p class="field">
-                <label for="subscribe-email-field" class="field-label">Электронная почта</label>
-                <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email" placeholder="Электронная почта">
+                <label for="subscribe-email-field" data="Электронная почта" class="field-label"></label>
+                <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email" required>
               </p>
               <button type="submit" class="button subscribe-button">Отправить</button>
             </form>
@@ -238,14 +230,24 @@
           </li>
         </ul>
       </section>
-      <section class="footer-column footer-column-links">
+      <section class="footer-column">
+        <ul class="footer-column-links">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <a class="link footer-links" href="#">Для поставщиков</a>
-        <a class="link footer-links" href="#">О производстве</a>
-        <a class="link footer-links" href="#">Наши документы</a>
-        <a class="link footer-links" href="#">Экологические стандарты</a>
+          <li class="footer-links">
+            <a class="link footer-links-item footer-links-item-bold" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">Наши документы</a> 
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">О производстве</a> 
+          </li>
+          <li class="footer-links">
+            <a class="link footer-links-item" href="#">Экологические стандарты</a> 
+          </li>
+        </ul>
       </section>
-      <div class="footer-column">
+      <div class="footer-column footer-column-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
