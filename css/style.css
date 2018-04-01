@@ -744,10 +744,12 @@ body {
   border: 6px solid transparent;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  min-height: 149px;
+  justify-content: space-between;
+  min-height: 145px;
   width: 518px;
-  padding: 26px 15px;
+  padding: 30px 20px 35px;
 }
 
 .subsribe-text {
@@ -760,9 +762,11 @@ body {
 }
 
 .subscribe-button {
-  width: 128px;
-  padding: 0;
+  display: block;
+  width: 130px;
+  padding: 0 20px;
   height: 44px;
+  margin-left: 10px;
 }
 
 .map {
