@@ -13,7 +13,7 @@ body {
   background-color: #849d8f;
 }
 
-.main-container-index{
+.main-container-index {
   background-image: url(../img/index-slider/index-slider-1-page.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -114,13 +114,13 @@ body {
   padding: 12px;
 }
 
-.field-input:hover {	
-  box-shadow: 0 0 0 2px #c7c6c5 inset;	
-}	
-	
-.field-input:focus {	
-  outline: none;	
-  box-shadow: 0 0 0 2px #8fbdec inset;	
+.field-input:hover {
+  box-shadow: 0 0 0 2px #c7c6c5 inset;
+}
+
+.field-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #8fbdec inset;
 }
 
 .field-input::placeholder {
@@ -249,7 +249,7 @@ body {
 .main-navigation-sub-menu-link:active {
   background-color: #f6b5a5;
 }
-    
+
 .main-navigation-sub-menu-item:last-of-type .main-navigation-sub-menu-link {
   border-radius: 0 0 5px 5px;
   padding-bottom: 8px;
@@ -292,7 +292,7 @@ body {
 .user-action-button:active {
   background-color: #ededed;
 }
-  
+
 .user-action-button-search {
   width: 32px;
   background-image: url("../img/svg-gllacy/loupe.svg");
@@ -350,9 +350,12 @@ body {
 
 .login-form {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+}
+
+.login-form-footer {
+  display: flex;
+  align-items: center;
 }
 
 .login-form .field-input {
@@ -403,6 +406,7 @@ body {
   padding: 0;
   width: 125px;
   list-style: none;
+  margin-left: 15px;
 }
 
 .login-help-link {
@@ -463,7 +467,7 @@ body {
 .basket-item-mass {
   width: 120px;
 }
-  
+
 .basket-item-cost {
   color: #999999;
 }
@@ -618,6 +622,10 @@ body {
 #ice-cream-3:checked ~ .main-container {
   background-color: #9d8b84;
   background-image: url("../img/index-slider/index-slider-3-page.png");
+}
+
+.slider-input {
+  display: none;
 }
 
 .promo-banner-berry,
@@ -792,9 +800,7 @@ body {
   height: 100%;
 }
 
-.map-image {
-  
-}
+.map-image {}
 
 .company-contacts {
   color: #323232;
@@ -946,7 +952,7 @@ body {
   left: -20px;
   top: 2px;
 }
-  
+
 .copyrigth-info {
   font-size: 12px;
   line-height: 18px;
@@ -996,7 +1002,7 @@ body {
   margin: 0 -13px 40px;
   text-align: center;
   position: relative;
-  border-radius: 5px;  
+  border-radius: 5px;
 }
 
 .catalog-item:hover .catalog-item-preview {
@@ -1048,7 +1054,7 @@ body {
 
 .catalog-item-preview {
   position: absolute;
-   display: none; 
+  display: none;
   background-color: rgba(248, 247, 244, 0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   z-index: 5;
@@ -1172,11 +1178,11 @@ body {
   padding-left: 27px;
   margin-right: 18px;
 }
-  
+
 .catalog-filter-label:last-of-type {
   margin-right: 0;
 }
-  
+
 .catalog-filter-item-radio + .catalog-filter-label::before {
   content: "";
   position: absolute;
@@ -1192,7 +1198,7 @@ body {
   background-image: url(../img/svg-gllacy/radio-on.svg);
 
 }
-  
+
 .catalog-filter-item-checkbox + .catalog-filter-label::before {
   content: "";
   position: absolute;

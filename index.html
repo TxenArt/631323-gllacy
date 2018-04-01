@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
-  <input type="radio" id="ice-cream-1" class="visually-hidden" name="switch" checked>
-  <input type="radio" id="ice-cream-2" class="visually-hidden" name="switch">
-  <input type="radio" id="ice-cream-3" class="visually-hidden" name="switch">
+  <input type="radio" id="ice-cream-1" class="slider-input" name="switch" checked>
+  <input type="radio" id="ice-cream-2" class="slider-input" name="switch">
+  <input type="radio" id="ice-cream-3" class="slider-input" name="switch">
   <div class="main-container main-container-index">
     <header class="main-header container">
       <div class="main-header-wrapper">
@@ -34,27 +34,29 @@
         </nav>
         <ul class="user-actions">
           <li class="user-action user-action-search">
-            <button type="button" class="user-action-button user-action-button-search"><span class="visually-hidden">Поиск</span></button>  
+            <button type="button" class="user-action-button user-action-button-search"><span class="visually-hidden">Поиск</span></button>
             <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
               <label for="user-action-search" class="visually-hidden">Поиск по сайту</label>
               <input type="text" id="user-action-search" name="user-action-search" class="field-input" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-action user-action-login">
-            <button type="button" class="user-action-button user-action-button-login">Вход</button>   
+            <button type="button" class="user-action-button user-action-button-login">Вход</button>
             <div class="user-action-login-popup">
               <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
                 <label for="field-email" class="visually-hidden">Электронная почта</label>
                 <input type="email" class="field-input" id="field-email" name="email-login" placeholder="Электронная почта" required>
                 <label for="field-password" class="visually-hidden">Пароль</label>
                 <input type="password" class="field-input" id="field-password" name="password-login" placeholder="Пароль" required>
-                <button type="submit" class="button login-submit-button">Войти</button>
-            <ul class="login-help">
-              <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
-              <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
-            </ul>
+                <div class="login-form-footer">
+                  <button type="submit" class="button login-submit-button">Войти</button>
+                  <ul class="login-help">
+                    <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+                    <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+                  </ul>
+                </div>
               </form>
-          </div>
+            </div>
           </li>
           <li class="user-action user-action-basket">
             <button type="button" class="user-action-button user-action-button-basket">Пусто</button>
@@ -167,8 +169,7 @@
             <p class="subsribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="#" method="post" class="subscribe-form">
               <label for="subscribe-email-field" class="visually-hidden">Электронная почта</label>
-              <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email"
-                placeholder="Электронная почта" required>
+              <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email" placeholder="Электронная почта" required>
               <button type="submit" class="button subscribe-button">Отправить</button>
             </form>
           </section>
@@ -186,7 +187,7 @@
               <p class="company-contacts-text">Для заказов по телефону<br>
                 <span>8&nbsp;812&nbsp;450-25-25</span><br> (с 10 до 20 ежедневно)</p>
               <button type="button" class="button company-contacts-feedback-button">Форма обратной связи</button>
-            </section> 
+            </section>
           </div>
         </div>
       </div>
@@ -224,13 +225,13 @@
             <a class="link footer-link footer-link-marked" href="#">Для поставщиков</a>
           </li>
           <li class="footer-links-item">
-            <a class="link footer-link" href="#">Наши документы</a> 
+            <a class="link footer-link" href="#">Наши документы</a>
           </li>
           <li class="footer-links-item">
-            <a class="link footer-link" href="#">О производстве</a> 
+            <a class="link footer-link" href="#">О производстве</a>
           </li>
           <li class="footer-links-item">
-            <a class="link footer-link" href="#">Экологические стандарты</a> 
+            <a class="link footer-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
