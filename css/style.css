@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, serif;
   font-size: 16px;
   line-height: 22px;
@@ -798,6 +797,7 @@ body {
   background-color: #ece5c8;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .map-image {}
@@ -1334,7 +1334,6 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 18px;
   min-height: 107px;
 }
