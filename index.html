@@ -19,7 +19,7 @@
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li class="main-navigation-item"><a href="catalog.html" class="main-navigation-link">Каталог</a>
+            <li class="main-navigation-item"><a href="#" class="main-navigation-link">Каталог</a>
               <ul class="main-navigation-sub-menu">
                 <li class="main-navigation-sub-menu-title">Новинки</li>
                 <li class="main-navigation-sub-menu-item"><a href="catalog.html" class="main-navigation-sub-menu-link">Сливочное</a></li>
@@ -36,6 +36,7 @@
           <li class="user-action user-action-search">
             <button type="button" class="user-action-button user-action-button-search"><span class="visually-hidden">Поиск</span></button>  
             <form action="https://echo.htmlacademy.ru" method="get" class="user-action-search-form">
+              <label for="user-action-search" class="visually-hidden">Поиск по сайту</label>
               <input type="text" id="user-action-search" name="user-action-search" class="field-input" placeholder="Что ищем?">
             </form>
           </li>
@@ -43,8 +44,10 @@
             <button type="button" class="user-action-button user-action-button-login">Вход</button>   
             <div class="user-action-login-popup">
               <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-                <input type="email" class="field-input" id="field-email" name="email" placeholder="Электронная почта" required>
-                <input type="password" class="field-input" id="field-password" name="password" placeholder="Пароль" required>
+                <label for="field-email" class="visually-hidden">Электронная почта</label>
+                <input type="email" class="field-input" id="field-email" name="email-login" placeholder="Электронная почта" required>
+                <label for="field-password" class="visually-hidden">Пароль</label>
+                <input type="password" class="field-input" id="field-password" name="password-login" placeholder="Пароль" required>
                 <button type="submit" class="button login-submit-button">Войти</button>
             <ul class="login-help">
               <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
@@ -163,6 +166,7 @@
             <h2 class="visually-hidden">Рассылка</h2>
             <p class="subsribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="#" method="post" class="subscribe-form">
+              <label for="subscribe-email-field" class="visually-hidden">Электронная почта</label>
               <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email"
                 placeholder="Электронная почта" required>
               <button type="submit" class="button subscribe-button">Отправить</button>
@@ -241,8 +245,11 @@
   <div class="feedback-popup">
     <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
       <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+        <label for="feedback-name-field" class="visually-hidden">Как вас зовут?</label>
         <input type="text" class="field-input" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?" required>
+        <label for="feedback-email-field" class="visually-hidden">Ваша почта для ответа?</label>
         <input type="email" class="field-input" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?" required>
+        <label for="feedback-text-field" class="visually-hidden">Напишите что-нибудь</label>
         <textarea name="feedback-text" class="field-input" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..." required></textarea>
       <button type="submit" class="button feedback-submit-button">Отправить</button>
       <button type="button" class="feedback-close">Закрыть форму</button>
