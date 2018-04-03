@@ -6,6 +6,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
+  min-width: 1200px;
 }
 
 .main-container {
@@ -53,8 +54,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  height: 34px;
-  padding: 10px 22px 0 22px;
+  padding: 10px 22px;
   text-decoration: none;
   background-image: linear-gradient(#f26843, #e74b36);
   box-shadow: 0 2px 2px 0 #ac1000;
@@ -142,13 +142,22 @@ body {
   color: #999999;
 }
 
+.main-header {
+  padding-top: 7px;
+  min-height: 72px;
+  position: relative;
+}
+
+.main-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
   color: inherit;
   font-weight: 700;
-
-  padding-left: 0px;
   margin-left: 9px;
   padding-bottom: 9px;
   max-width: 650px;
@@ -256,17 +265,22 @@ body {
 
 .user-actions {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: auto;
-  padding-bottom: 11px;
-  min-width: 262px;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-top: 5px;
 }
 
 .user-action {
   list-style: none;
   position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.user-action:last-of-type {
+  margin-right: 0;
 }
 
 .user-action-button {
@@ -278,7 +292,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 16px 16px;
-  background-position: 16px 6px;
+  background-position: 16px 7px;
   background-repeat: no-repeat;
 }
 
@@ -295,7 +309,7 @@ body {
 .user-action-button-search {
   width: 32px;
   background-image: url("../img/svg-gllacy/loupe.svg");
-  background-position: center;
+  background-position: 7px;
   font-size: 0;
   padding: 0;
 }
@@ -394,18 +408,14 @@ body {
 
 .login-submit-button {
   width: 100px;
-  height: 44px;
-  border: none;
   border-radius: 17px / 22px;
-  padding: 0;
   margin: 0 3px;
 }
 
 .login-help {
   padding: 0;
-  width: 125px;
   list-style: none;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .login-help-link {
@@ -510,19 +520,22 @@ body {
   text-align: right;
   position: absolute;
   right: 27px;
-  top: 75px;
+  bottom: -36px;
   padding: 0;
   margin: 0;
+  z-index: 10;
 }
 
 .header-worktime {
   font-size: 14px;
   line-height: 16px;
+  margin: 0 0 4px;
 }
 
 .header-contact-phone {
   font-size: 22px;
   line-height: 24px;
+  margin: 0;
 }
 
 .header-contact-phone a {
@@ -534,7 +547,7 @@ body {
   font-weight: 700;
   text-align: center;
   position: relative;
-  padding-top: 321px;
+  padding-top: 312px;
 }
 
 .slide {
@@ -544,7 +557,7 @@ body {
 .slider-item-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
@@ -552,7 +565,8 @@ body {
 
 .slider-item-button {
   display: inline-block;
-  padding: 12px 44px;
+  vertical-align: top;
+  padding: 13px 40px 17px 40px;
   font-weight: 700;
   font-size: 32px;
   line-height: 34px;
@@ -563,7 +577,7 @@ body {
   background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
   text-decoration: none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .slider-item-button:hover {
@@ -632,9 +646,12 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  padding: 20px 20px 70px;
-  width: 520px;
-  min-height: 139px;
+  padding-top: 15px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 72px;
+  width: 524px;
+  min-height: 142px;
   border-radius: 15px;
   position: relative;
 }
@@ -646,7 +663,9 @@ body {
 }
 
 .promo-banner-text {
+  margin-left: 2px;
   margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .promo-banner-berry {
@@ -661,8 +680,9 @@ body {
 
 .promo-banner-button {
   position: absolute;
-  right: 21px;
-  bottom: 23px;
+  right: 22px;
+  bottom: 24px;
+  padding: 11px 22px;
 }
 
 .about-us {
@@ -783,7 +803,6 @@ body {
 
 .subscribe-button {
   display: block;
-  width: 130px;
   padding: 0 20px;
   height: 44px;
   margin-left: 10px;
@@ -806,14 +825,14 @@ body {
   color: #323232;
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.98);
-  width: 262px;
-  max-height: 305px;
+  width: 252px;
+  max-height: 307px;
   overflow: auto;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  padding: 30px 20px;
+  padding: 29px 25px;
   border-radius: 15px;
 }
 
@@ -823,10 +842,20 @@ body {
   margin: 0 0 20px;
 }
 
-.company-contacts-text span {
+.company-contacts span {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  display: block;
+  margin-top: 3px;
+}
+
+.company-contacts-text:last-of-type {
+  margin-bottom: 27px;
+}
+
+.company-contacts-feedback-button {
+  width: 100%;
 }
 
 .overlay {
@@ -876,16 +905,6 @@ body {
 
 .feedback-footer {
   text-align: right;
-}
-
-.company-contacts-feedback-button,
-.feedback-submit-button {
-  height: 44px;
-  padding: 0 22px;
-}
-
-.feedback-submit-button {
-  width: 138px;
 }
 
 .feedback-close {
@@ -1025,7 +1044,7 @@ body {
 }
 
 .catalog-item-title {
-  margin: 6px 0 0;
+  margin: 13px 0 0;
 }
 
 .catalog-item-title .link {
@@ -1040,7 +1059,7 @@ body {
   line-height: 45px;
   position: absolute;
   margin: 0 auto;
-  top: 208px;
+  top: 209px;
   left: 12px;
 }
 
@@ -1068,11 +1087,8 @@ body {
 }
 
 .catalog-item-button {
-  width: 180px;
-  margin: 0 auto;
   position: absolute;
-  bottom: 10px;
-  padding: 10px 10px 0 10px;
+  padding: 10px 16px;
   border-radius: 17px / 22px;
   left: 46px;
   bottom: 21px;
@@ -1106,8 +1122,8 @@ body {
 .slider-range {
   position: absolute;
   height: 100%;
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 53px;
   background-color: #fff;
 }
 
@@ -1229,6 +1245,7 @@ body {
 
 .catalog-filter-button-submit:active {
   background-color: #eaeaea;
+  box-shadow: inset 0 2px 2px #6a6b6a;
 }
 
 .pagination {
@@ -1301,27 +1318,6 @@ body {
 }
 
 /*Стили для сетки*/
-
-.main-header {
-  padding-top: 8px;
-  min-height: 72px;
-  position: relative;
-}
-
-.main-header-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.header-worktime {
-  display: inline;
-  vertical-align: top;
-}
-
-.header-contact-phone {
-  display: inline;
-  vertical-align: top;
-}
 
 .container-row {
   display: flex;

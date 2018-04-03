@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
   <meta charset="UTF-8">
   <title>Gllacy-Shop: каталог товаров</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="main-container">
@@ -27,7 +27,7 @@
                 <li class="main-navigation-sub-menu-item"><a href="#" class="main-navigation-sub-menu-link">Мелорин</a></li>
               </ul>
             </li>
-            <li class="main-navigation-item"><a href="#" class="main-navigation-link">Оплата и доставка</a></li>
+            <li class="main-navigation-item"><a href="#" class="main-navigation-link">Доставка и оплата</a></li>
             <li class="main-navigation-item"><a href="#" class="main-navigation-link">О Компании</a></li>
           </ul>
         </nav>
@@ -47,11 +47,13 @@
                 <input type="email" class="field-input" id="field-email" name="email-login" placeholder="Электронная почта" required>
                 <label for="field-password" class="visually-hidden">Пароль</label>
                 <input type="password" class="field-input" id="field-password" name="password-login" placeholder="Пароль" required>
-                <button type="submit" class="button login-submit-button">Войти</button>
-                <ul class="login-help">
-                  <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
-                  <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
-                </ul>
+                <div class="login-form-footer">
+                  <button type="submit" class="button login-submit-button">Войти</button>
+                  <ul class="login-help">
+                    <li class="login-help-item"><a href="#" class="login-help-link">Забыли пароль?</a></li>
+                    <li class="login-help-item"><a href="#" class="login-help-link">Новая регистрация</a></li>
+                  </ul>
+                </div>
               </form>
             </div>
           </li>
@@ -94,7 +96,6 @@
       </div>
       <div class="header-contacts">
         <p class="header-worktime">С 10 до 20, ежедневно</p>
-        <br>
         <p class="header-contact-phone"><a href="callto:+78124502525"> 8 812 450-25-25</a></p>
       </div>
     </header>
@@ -107,7 +108,7 @@
       <h1 class="page-title">Сливочное мороженное</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="catalog.html" method="post" class="catalog-filter">
+        <form action="https://echo.htmlacademy.ru" method="post" class="catalog-filter">
           <fieldset class="catalog-filter-section catalog-filter-section-sort">
             <legend class="catalog-filter-item-title">Сортировка:</legend>
             <select name="sort" id="sort" class="catalog-filter-item catalog-filter-select">
@@ -121,7 +122,7 @@
             <legend class="catalog-filter-item-title">Цена: 100 руб. – 500 руб.</legend>
             <div class="catalog-filter-item catalog-filter-item-price">
               <div class="slider-scale">
-                <div class="slider-range" style="left: 16px; right: 53px">
+                <div class="slider-range">
                   <div class="slider-toggle slider-toggle-min"></div>
                   <div class="slider-toggle slider-toggle-max"></div>
                 </div>
@@ -131,28 +132,28 @@
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Жирность:</legend>
             <div class="catalog-filter-item">
-              <input type="radio" name="by-fat" id="by-fat-0" class="visually-hidden catalog-filter-item-radio">
+              <input type="radio" name="by-fat" id="by-fat-0" value="by-fat-0" class="visually-hidden catalog-filter-item-radio">
               <label for="by-fat-0" class="catalog-filter-label">0%</label>
-              <input type="radio" name="by-fat" id="by-fat-to-10" class="visually-hidden catalog-filter-item-radio">
+              <input type="radio" name="by-fat" id="by-fat-to-10" value="by-fat-to-10" class="visually-hidden catalog-filter-item-radio">
               <label for="by-fat-to-10" class="catalog-filter-label">до 10%</label>
-              <input type="radio" name="by-fat" id="by-fat-to-30" class="visually-hidden catalog-filter-item-radio">
+              <input type="radio" name="by-fat" id="by-fat-to-30" value="by-fat-to-30" class="visually-hidden catalog-filter-item-radio">
               <label for="by-fat-to-30" class="catalog-filter-label">до 30%</label>
-              <input type="radio" name="by-fat" id="by-fat-over-30" class="visually-hidden catalog-filter-item-radio">
+              <input type="radio" name="by-fat" id="by-fat-over-30" value="by-fat-over-30" class="visually-hidden catalog-filter-item-radio">
               <label for="by-fat-over-30" class="catalog-filter-label">выше 30%</label>
             </div>
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Наполнители:</legend>
             <div class="catalog-filter-item">
-              <input type="checkbox" name="filler" id="filler-choco" checked class="visually-hidden catalog-filter-item-checkbox">
+              <input type="checkbox" name="filler" id="filler-choco" value="filler-choco" checked class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-choco" class="catalog-filter-label">шоколадные</label>
-              <input type="checkbox" name="filler" id="filler-sugar" checked class="visually-hidden catalog-filter-item-checkbox">
+              <input type="checkbox" name="filler" id="filler-sugar" value="filler-sugar" checked class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-sugar" class="catalog-filter-label">сахарные присыпки</label>
-              <input type="checkbox" name="filler" id="filler-fruit" class="visually-hidden catalog-filter-item-checkbox">
+              <input type="checkbox" name="filler" id="filler-fruit" value="filler-fruit" class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-fruit" class="catalog-filter-label">фрукты</label>
-              <input type="checkbox" name="filler" id="filler-syrip" class="visually-hidden catalog-filter-item-checkbox">
+              <input type="checkbox" name="filler" id="filler-syrip" value="filler-syrip" class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-syrip" class="catalog-filter-label">сиропы</label>
-              <input type="checkbox" name="filler" id="filler-jam" class="visually-hidden catalog-filter-item-checkbox">
+              <input type="checkbox" name="filler" id="filler-jam" value="filler-jam" class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-jam" class="catalog-filter-label">джем</label>
             </div>
           </fieldset>
