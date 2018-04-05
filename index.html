@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input type="radio" id="ice-cream-1" class="slider-input" name="switch" checked>
-  <input type="radio" id="ice-cream-2" class="slider-input" name="switch">
-  <input type="radio" id="ice-cream-3" class="slider-input" name="switch">
+  <input type="radio" id="ice-cream-1" class="slider-input visually-hidden" name="switch" checked>
+  <input type="radio" id="ice-cream-2" class="slider-input visually-hidden" name="switch">
+  <input type="radio" id="ice-cream-3" class="slider-input visually-hidden" name="switch">
   <div class="main-container main-container-index">
     <header class="main-header container">
       <div class="main-header-wrapper">
@@ -41,7 +41,8 @@
             </form>
           </li>
           <li class="user-action user-action-login">
-            <button type="button" class="user-action-button user-action-button-login">Вход</button>
+            <button type="button" id="login-button" class="user-action-button user-action-button-login">Вход</button>
+            <label for="login-button" class="visually-hidden">Вход в личный кабинет</label>
             <div class="user-action-login-popup">
               <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
                 <label for="field-email" class="visually-hidden">Электронная почта</label>
@@ -59,7 +60,8 @@
             </div>
           </li>
           <li class="user-action user-action-basket">
-            <button type="button" class="user-action-button user-action-button-basket">Пусто</button>
+            <button type="button" id="basket-button" class="user-action-button user-action-button-basket">Пусто</button>
+            <label for="basket-button" class="visually-hidden">Корзина с товарами</label>
           </li>
         </ul>
       </div>
@@ -74,9 +76,9 @@
         <section class="slider">
           <h2 class="visually-hidden">Главные предложения</h2>
           <div class="slider-controls">
-            <label for="ice-cream-1" class="slider-control">Первый</label>
-            <label for="ice-cream-2" class="slider-control">Второй</label>
-            <label for="ice-cream-3" class="slider-control">Третий</label>
+            <label for="ice-cream-1" class="slider-control">Первый слайд</label>
+            <label for="ice-cream-2" class="slider-control">Второй слайд</label>
+            <label for="ice-cream-3" class="slider-control">Третий слайд</label>
           </div>
           <section class="slide slider-item" id="slide-1">
             <h3 class="slider-item-title">Крем-брюле и пломбир с малиновым джемом</h3>
@@ -169,7 +171,8 @@
             <form action="#" method="post" class="subscribe-form">
               <label for="subscribe-email-field" class="visually-hidden">Электронная почта</label>
               <input type="email" class="field-input" id="subscribe-email-field" name="subscribe-email" placeholder="Электронная почта" required>
-              <button type="submit" class="button subscribe-button">Отправить</button>
+              <button type="submit" id="button-subscribe" class="button subscribe-button">Отправить</button>
+              <label for="button-subscribe" class="visually-hidden">Подписаться на рассылку</label>
             </form>
           </section>
         </div>
@@ -178,7 +181,8 @@
         <div id="map"></div>
         <div class="container">
           <div class="map-inner">
-            <img src="img/interactive-map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map-image" width="1146" height="480">
+            <img src="img/interactive-map.png" alt="Как добраться" class="map-image" width="1146" height="429">
+            <img src="img/svg-gllacy/pin.svg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map-image-pin" width="80" height="140">
             <section class="company-contacts">
               <h2 class="visually-hidden">Как связаться</h2>
               <p class="company-contacts-text">Адрес главного офиса <nobr>и офлайн-магазина:</nobr>
@@ -197,22 +201,22 @@
         <ul class="socials">
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-twitter" href="#">
-              <img src="img/social-button/twitter.svg" width="32" height="32" alt="Твиттер">
+              <img src="img/social-button/twitter.svg" width="32" height="32" alt="Мы в Твиттере">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-instagram" href="#">
-              <img src="img/social-button/instagram.svg" width="32" height="32" alt="Инстаграм">
+              <img src="img/social-button/instagram.svg" width="32" height="32" alt="Мы в Инстаграме">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-facebook" href="#">
-              <img src="img/social-button/fb.svg" width="32" height="32" alt="Фейсбук">
+              <img src="img/social-button/fb.svg" width="32" height="32" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-vkontakte" href="#">
-              <img src="img/social-button/vk.svg" width="32" height="32" alt="ВКонтакте">
+              <img src="img/social-button/vk.svg" width="32" height="32" alt="Мы в ВКонтакте">
             </a>
           </li>
         </ul>
@@ -235,7 +239,7 @@
         </ul>
       </section>
       <div class="footer-column">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p class="copyrigth-info">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a> &copy; 2017</p>
