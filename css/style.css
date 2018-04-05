@@ -836,9 +836,14 @@ body {
   background-color: #ece5c8;
   position: relative;
   height: 100%;
-/*  overflow: hidden;*/
+  overflow: hidden;
   line-height: 0;
-  margin: 0 -27px;
+}
+
+.map-image-pin {
+  position: absolute; 
+  left: 250px;
+  top: 138px;
 }
 
 .company-contacts {
@@ -849,7 +854,7 @@ body {
   max-height: 307px;
   overflow: auto;
   position: absolute;
-  right: 27px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   padding: 28px 25px 30px;
@@ -897,16 +902,16 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  width: 425px;
-  padding: 13px 25px 25px 25px;
+  width: 428px;
+  padding: 19px 25px 25px 24px;
   background-color: #f8f7f4;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .feedback-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   font-size: 24px;
   font-weight: 500;
   color: #333333;
@@ -914,10 +919,19 @@ body {
 
 .feedback-form .field-input {
   margin-bottom: 20px;
+  width: 267px;
+  font-size: 16px;
 }
 
 .feedback-form .field-textarea {
-  height: auto;
+  width: 428px;
+  max-width: 428px;
+  height: 154px;
+  padding-top: 9px;
+}
+
+.feedback-submit-button {
+  padding: 9px 24px 13px 22px;
 }
 
 .company-contacts-feedback {
@@ -939,9 +953,12 @@ body {
   position: absolute;
   font-size: 0;
   border: none;
-  outline: none;
-  right: 10px;
-  top: 10px;
+  right: 16px;
+  top: 15px;
+}
+
+.feedback-close:focus {
+  outline: 2px solid;
 }
 
 .socials {
