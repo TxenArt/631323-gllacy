@@ -40,7 +40,8 @@
             </form>
           </li>
           <li class="user-action user-action-login">
-            <button type="button" class="user-action-button user-action-button-login">Вход</button>
+            <button type="button" id="login-button" class="user-action-button user-action-button-login">Вход</button>
+            <label for="login-button" class="visually-hidden">Вход в личный кабинет</label>
             <div class="user-action-login-popup">
               <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
                 <label for="field-email" class="visually-hidden">Электронная почта</label>
@@ -58,7 +59,8 @@
             </div>
           </li>
           <li class="user-action user-action-basket user-action-basket-fill">
-            <button type="button" class="user-action-button user-action-button-basket-fill">2 товара</button>
+            <button type="button" id="basket-button" class="user-action-button user-action-button-basket-fill">2 товара</button>
+            <label for="basket-button" class="visually-hidden">Корзина с товарами</label>
             <div class="basket">
               <table class="basket-list">
                 <tr class="basket-item basket-item-top">
@@ -79,7 +81,7 @@
                   <td class="basket-item-cell basket-item-img">
                     <img src="img/basket-in/basket-item-2.jpg" alt="Товар из корзины" width="33" height="33">
                   </td>
-                  <td class="basket-item-cell basket-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket-item-cell basket-item-title">Клубничный пломбир с присыпкой из&nbsp;белого шоколада</td>
                   <td class="basket-item-cell basket-item-mass">1,5 кг &#215; <span class="basket-item-cost">300 руб.</span></td>
                   <td class="basket-item-cell basket-item-result">450 руб.</td>
                 </tr>
@@ -131,7 +133,7 @@
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Жирность:</legend>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item catalog-filter-item-by-fat">
               <input type="radio" name="by-fat" id="by-fat-0" value="by-fat-0" class="visually-hidden catalog-filter-item-radio">
               <label for="by-fat-0" class="catalog-filter-label">0%</label>
               <input type="radio" name="by-fat" id="by-fat-to-10" value="by-fat-to-10" class="visually-hidden catalog-filter-item-radio">
@@ -144,7 +146,7 @@
           </fieldset>
           <fieldset class="catalog-filter-section">
             <legend class="catalog-filter-item-title">Наполнители:</legend>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item catalog-filter-item-filler">
               <input type="checkbox" name="filler" id="filler-choco" value="filler-choco" checked class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-choco" class="catalog-filter-label">шоколадные</label>
               <input type="checkbox" name="filler" id="filler-sugar" value="filler-sugar" checked class="visually-hidden catalog-filter-item-checkbox">
@@ -154,10 +156,11 @@
               <input type="checkbox" name="filler" id="filler-syrip" value="filler-syrip" class="visually-hidden catalog-filter-item-checkbox">
               <label for="filler-syrip" class="catalog-filter-label">сиропы</label>
               <input type="checkbox" name="filler" id="filler-jam" value="filler-jam" class="visually-hidden catalog-filter-item-checkbox">
-              <label for="filler-jam" class="catalog-filter-label">джем</label>
+              <label for="filler-jam" class="catalog-filter-label">джемы</label>
             </div>
           </fieldset>
-          <button type="submit" class="catalog-filter-item catalog-filter-section catalog-filter-button-submit">Применить</button>
+          <button type="submit" id="filter-submit" class="catalog-filter-item catalog-filter-section catalog-filter-button-submit">Применить</button>
+          <label for="filter-submit" class="visually-hidden">Применить фильтр товаров</label>
         </form>
       </section>
       <section class="catalog">
@@ -284,13 +287,27 @@
         </article>
       </section>
       <ul class="pagination">
-        <li class="pagination-item"><a href="#" class="pagination-link pagination-link-disabled"></a></li>
-        <li class="pagination-item pagination-item-current"><a class="pagination-link pagination-link-current">1</a></li>
-        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-        <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-        <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-        <li class="pagination-item"><a href="#" class="pagination-link pagination-link-enabled"></a></li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link pagination-link-disabled" title="Предыдущая страница каталога"></a>
+        </li>
+        <li class="pagination-item pagination-item-current">
+          <a class="pagination-link pagination-link-current" title="Первая страница каталога">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#" title="Вторая страница каталога">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#" title="Третья страница каталога">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#" title="Четвертая страница каталога">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#" title="Пятая страница каталога">5</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link pagination-link-enabled" title="Следующая страница каталога"></a>
+        </li>
       </ul>
     </main>
     <footer class="main-footer container">
@@ -299,22 +316,22 @@
         <ul class="socials">
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-twitter" href="#">
-              <img src="img/social-button/twitter.svg" width="32" height="32" alt="Твиттер">
+              <img src="img/social-button/twitter.svg" width="32" height="32" alt="Мы в Твиттере">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-instagram" href="#">
-              <img src="img/social-button/instagram.svg" width="32" height="32" alt="Инстаграм">
+              <img src="img/social-button/instagram.svg" width="32" height="32" alt="Мы в Инстаграме">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-facebook" href="#">
-              <img src="img/social-button/fb.svg" width="32" height="32" alt="Фейсбук">
+              <img src="img/social-button/fb.svg" width="32" height="32" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-button socials-item-button-vkontakte" href="#">
-              <img src="img/social-button/vk.svg" width="32" height="32" alt="ВКонтакте">
+              <img src="img/social-button/vk.svg" width="32" height="32" alt="Мы в ВКонтакте">
             </a>
           </li>
         </ul>
@@ -337,7 +354,7 @@
         </ul>
       </section>
       <div class="footer-column">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p class="copyrigth-info">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a> &copy; 2017</p>
